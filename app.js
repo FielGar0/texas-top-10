@@ -229,6 +229,15 @@
       </a>`;
   }
 
+  // Home page view: "map" (interactive Texas map) or "list" (city directory by region).
+  let homeView = (() => {
+    try {
+      return localStorage.getItem("tt10-view") === "list" ? "list" : "map";
+    } catch (e) {
+      return "map";
+    }
+  })();
+
   function renderHome() {
     document.title = "Texas Top 10";
     setNav("home");
@@ -237,17 +246,45 @@
         <div class="stage-head">
           <span class="eyebrow">Texas Top 10</span>
           <h1 class="headline">Ten places.<br />Every city.</h1>
-          <div class="cta-row">
-            <a class="more" href="#cities">Browse all ${cities.length} cities</a>
-            <a class="more" href="#/explore">Explore all ${allPlaces.length} places</a>
+          <div class="view-switch">
+            <div class="segmented" role="group" aria-label="Choose how to browse" id="view-seg">
+              <span class="seg-thumb" aria-hidden="true"></span>
+              <button data-view="map" aria-pressed="${homeView === "map"}">Map</button>
+              <button data-view="list" aria-pressed="${homeView === "list"}">List</button>
+            </div>
           </div>
         </div>
-        <div class="stage-grid">
-          <div class="map-wrap" id="map"></div>
-          <aside class="panel" id="panel" aria-live="polite"></aside>
+
+        <div class="view view-map" id="view-map" ${homeView === "map" ? "" : "hidden"}>
+          <div class="stage-grid">
+            <div class="map-wrap" id="map"></div>
+            <aside class="panel" id="panel" aria-live="polite"></aside>
+          </div>
+          <div class="city-strip" role="list" aria-label="Cities">
+            ${cities.map((c) => `<a role="listitem" class="city-chip" href="#/city/${c.slug}" data-slug="${c.slug}">${esc(c.name)}</a>`).join("")}
+          </div>
         </div>
-        <div class="city-strip" role="list" aria-label="Cities">
-          ${cities.map((c) => `<a role="listitem" class="city-chip" href="#/city/${c.slug}" data-slug="${c.slug}">${esc(c.name)}</a>`).join("")}
+
+        <div class="view view-list" id="view-list" ${homeView === "list" ? "" : "hidden"}>
+          ${GROUPS.map(
+            (g) => `
+            <section class="dir-group">
+              <h2 class="dir-title">${esc(g)}</h2>
+              <ul class="dir-list">
+                ${citiesIn(g)
+                  .map(
+                    (c) => `
+                  <li><a class="dir-row" href="#/city/${c.slug}">
+                    <span class="dir-thumb">${img(cityPhoto(c), "", 330, "dir-img")}</span>
+                    <span class="dir-text"><strong>${esc(c.name)}</strong><span>${esc(c.tagline)}</span></span>
+                    <span class="dir-chev" aria-hidden="true">›</span>
+                  </a></li>`
+                  )
+                  .join("")}
+              </ul>
+            </section>`
+          ).join("")}
+          <p class="dir-foot"><a class="more" href="#/explore">Or browse all ${allPlaces.length} places</a></p>
         </div>
       </section>
 
@@ -284,6 +321,23 @@
           </div>
         </div>
       </section>`;
+
+    // Map / List switch. The choice is remembered for the next visit.
+    segmented(document.getElementById("view-seg"), (b) => {
+      homeView = b.dataset.view;
+      try {
+        localStorage.setItem("tt10-view", homeView);
+      } catch (e) {}
+      ["map", "list"].forEach((v) => {
+        const el = document.getElementById("view-" + v);
+        el.hidden = v !== homeView;
+        if (v === homeView) {
+          el.classList.remove("view-enter");
+          void el.offsetWidth;
+          el.classList.add("view-enter");
+        }
+      });
+    });
 
     // Map + preview panel
     const panel = document.getElementById("panel");

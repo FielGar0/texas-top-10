@@ -10,6 +10,7 @@
 - [x] Photo Credits page
 - [x] City pages: zoomed mini map, sliding category filter, animated entries, practical tips
 - [x] Phone layout and touch support
+- [x] Home page Map / List switch (remembers the choice)
 - [x] Navigation without the map: Cities menu by region, region filter, search that finds places, Explore page with filters, place detail popup, "In this list" jump links
 
 ## Next

@@ -485,6 +485,31 @@ main { transition: filter 0.3s; }
   .explore-head { padding-top: 44px; }
 }
 
+/* ---------- Home: Map / List switch ---------- */
+.view-switch { margin-top: 28px; display: flex; justify-content: center; }
+.view-switch .segmented button { padding: 7px 26px; font-size: 14px; }
+.view[hidden] { display: none; }
+.view-enter { animation: panelIn 0.5s var(--ease) both; }
+
+/* List view: city directory grouped by region */
+.view-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); gap: 32px 28px; }
+.dir-title { font-size: 13px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-3); margin: 0 0 8px 4px; }
+.dir-list { list-style: none; margin: 0; padding: 6px; background: var(--bg-alt); border-radius: 20px; }
+.dir-row {
+  display: grid; grid-template-columns: 56px 1fr 16px; gap: 14px; align-items: center;
+  padding: 10px; border-radius: 14px; color: var(--text); transition: background 0.2s;
+}
+.dir-row:hover { background: #fff; text-decoration: none; }
+.dir-list li + li .dir-row { border-top: 1px solid transparent; }
+.dir-thumb { width: 56px; height: 56px; border-radius: 12px; overflow: hidden; background: #e4e1da; display: block; }
+.dir-img { display: block; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 0.5s; }
+.dir-text strong { display: block; font-size: 17px; font-weight: 600; letter-spacing: -0.02em; }
+.dir-text span { display: block; font-size: 13px; color: var(--text-2); line-height: 1.35; margin-top: 2px; }
+.dir-chev { color: var(--text-3); font-size: 22px; transition: transform 0.25s var(--ease); }
+.dir-row:hover .dir-chev { transform: translateX(3px); color: var(--text); }
+.dir-foot { grid-column: 1 / -1; text-align: center; margin-top: 4px; }
+@media (max-width: 734px) { .view-list { grid-template-columns: 1fr; gap: 24px; } }
+
 /* Motion */
 .reveal { opacity: 0; transform: translateY(16px); transition: opacity 0.7s ease, transform 0.7s cubic-bezier(0.25, 0.1, 0.25, 1); }
 .reveal.in { opacity: 1; transform: none; }
