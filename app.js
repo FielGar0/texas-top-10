@@ -42,7 +42,12 @@
     return { more: d[0] || "", time: d[1] || "" };
   };
   const GROUPS = ["Central Texas", "North Texas", "Gulf Coast", "East Texas", "West Texas", "Panhandle & Plains"];
-  const citiesIn = (g) => cities.filter((c) => c.group === g);
+  // Cities first, then small towns, within a region.
+  const citiesIn = (g) =>
+    cities.filter((c) => c.group === g).sort((a, b) => (a.tier === "town") - (b.tier === "town"));
+  const majors = cities.filter((c) => c.tier !== "town");
+  const towns = cities.filter((c) => c.tier === "town");
+  const townTag = (c) => (c.tier === "town" ? ` <span class="town-tag">Town</span>` : "");
   const allPlaces = cities.flatMap((c) => c.places.map((p, i) => ({ city: c, place: p, rank: i + 1 })));
   const findPlace = (slug, rank) => {
     const c = cities.find((x) => x.slug === slug);
@@ -115,7 +120,7 @@
           (g) => `
           <div class="citymenu-col">
             <h3>${esc(g)}</h3>
-            ${citiesIn(g).map((c) => `<a href="#/city/${c.slug}">${esc(c.name)}</a>`).join("")}
+            ${citiesIn(g).map((c) => `<a href="#/city/${c.slug}" class="${c.tier === "town" ? "is-town" : ""}">${esc(c.name)}</a>`).join("")}
           </div>`
         ).join("")}
         <div class="citymenu-col citymenu-extra">
@@ -176,13 +181,13 @@
         <h2 class="panel-title">Pick a city.</h2>
         <p class="panel-sub">${
           window.matchMedia("(hover: none)").matches
-            ? "Tap a city on the map to zoom in and see what's on its list. Tap again to open the full ten."
-            : "Hover over a city on the map to zoom in and see what's on its list. Click to open the full ten."
+            ? "Tap a city to zoom in and see its list; tap again to open it. Zoom in with + or two fingers to find small towns."
+            : "Hover over a city to zoom in and see its list; click to open it. Zoom in with + or a pinch to find small towns, and drag to move around."
         }</p>
         <div class="stats">
-          <div><span class="stat">${cities.length}</span><span class="stat-label">cities</span></div>
+          <div><span class="stat">${majors.length}</span><span class="stat-label">cities</span></div>
+          <div><span class="stat">${towns.length}</span><span class="stat-label">small towns</span></div>
           <div><span class="stat">${totalPlaces}</span><span class="stat-label">places</span></div>
-          <div><span class="stat">10</span><span class="stat-label">per city</span></div>
         </div>
       </div>`;
   }
@@ -261,7 +266,7 @@
             <aside class="panel" id="panel" aria-live="polite"></aside>
           </div>
           <div class="city-strip" role="list" aria-label="Cities">
-            ${cities.map((c) => `<a role="listitem" class="city-chip" href="#/city/${c.slug}" data-slug="${c.slug}">${esc(c.name)}</a>`).join("")}
+            ${majors.map((c) => `<a role="listitem" class="city-chip" href="#/city/${c.slug}" data-slug="${c.slug}">${esc(c.name)}</a>`).join("")}
           </div>
         </div>
 
@@ -276,7 +281,7 @@
                     (c) => `
                   <li><a class="dir-row" href="#/city/${c.slug}">
                     <span class="dir-thumb">${img(cityPhoto(c), "", 330, "dir-img")}</span>
-                    <span class="dir-text"><strong>${esc(c.name)}</strong><span>${esc(c.tagline)}</span></span>
+                    <span class="dir-text"><strong>${esc(c.name)}${townTag(c)}</strong><span>${esc(c.tagline)}</span></span>
                     <span class="dir-chev" aria-hidden="true">›</span>
                   </a></li>`
                   )
@@ -346,23 +351,27 @@
     let shown = null;
     let leaveTimer;
 
-    const show = (slug) => {
+    // `fly`: move the map to the city. When the user has zoomed or panned by hand, hovering a marker
+    // only highlights it, so the map doesn't jump around under the pointer.
+    const show = (slug, fly) => {
       clearTimeout(leaveTimer);
       if (shown === slug) return;
       shown = slug;
       const city = cities.find((c) => c.slug === slug);
-      map.focus(slug);
+      if (fly || map.mode !== "manual") map.focus(slug);
+      else map.highlight(slug);
       panel.innerHTML = city ? panelCity(city) : panelIdle();
       app.querySelectorAll(".city-chip").forEach((ch) => ch.classList.toggle("active", ch.dataset.slug === slug));
     };
     const clear = () => {
       shown = null;
-      map.reset();
+      if (map.mode === "manual") map.highlight(null);
+      else map.reset();
       panel.innerHTML = panelIdle();
       app.querySelectorAll(".city-chip").forEach((ch) => ch.classList.remove("active"));
     };
 
-    map.on("hover", show);
+    map.on("hover", (slug) => show(slug, false));
     map.on("select", go);
     // Leaving the map area zooms back out, after a short pause so the panel can be reached.
     // Mouse only: on touch screens the preview stays until another city is tapped.
@@ -374,8 +383,8 @@
     stage.addEventListener("pointerleave", leave);
     stage.addEventListener("pointerenter", () => clearTimeout(leaveTimer));
     app.querySelectorAll(".city-chip").forEach((ch) => {
-      ch.addEventListener("pointerenter", (e) => e.pointerType === "mouse" && show(ch.dataset.slug));
-      ch.addEventListener("focus", () => ch.matches(":focus-visible") && show(ch.dataset.slug));
+      ch.addEventListener("pointerenter", (e) => e.pointerType === "mouse" && show(ch.dataset.slug, true));
+      ch.addEventListener("focus", () => ch.matches(":focus-visible") && show(ch.dataset.slug, true));
     });
     app.querySelector(".city-strip").addEventListener("pointerleave", leave);
     panel.innerHTML = panelIdle();
@@ -560,7 +569,7 @@
         <div class="container-wide">
           <span class="eyebrow">Explore</span>
           <h1 class="headline-md">Every place, in one list.</h1>
-          <p class="subhead">All ${allPlaces.length} places across ${cities.length} Texas cities. Filter by region, city or kind of place, or search by name.</p>
+          <p class="subhead">All ${allPlaces.length} places across ${majors.length} Texas cities and ${towns.length} small towns. Filter by region, city or kind of place, or search by name.</p>
           <div class="filters">
             <label class="searchfield">
               ${searchIcon}

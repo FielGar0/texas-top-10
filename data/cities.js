@@ -1,6 +1,6 @@
 // City data for Texas Top 10.
 // City: slug (URL), name, region, tagline (one line for the city tile), intro (opening paragraph), places (ranked).
-// group: region used for browsing. lat, lon: map position. labelSide: "left" to put the map label on the left of the dot.
+// tier: "town" for small towns (shown on the map only when zoomed in). group: region used for browsing. lat, lon: map position. labelSide: "left" to put the map label on the left of the dot.
 // Place: name, category, area, blurb, optional tip (a practical "good to know" note).
 window.CITIES = [
   {
@@ -138,7 +138,7 @@ window.CITIES = [
   {
     slug: "corpus-christi",
     group: "Gulf Coast",
-    lat: 27.8, lon: -97.4,
+    lat: 27.8, lon: -97.4, labelSide: "left",
     name: "Corpus Christi",
     region: "Coastal Bend",
     tagline: "A bayfront city on the doorstep of the wildest beach in Texas.",
@@ -397,6 +397,190 @@ window.CITIES = [
       { name: "Perini Ranch Steakhouse", category: "Food", area: "Buffalo Gap", blurb: "A celebrated steakhouse in a converted barn, known for mesquite-grilled steaks and its peppered beef tenderloin." },
       { name: "Abilene State Park", category: "Outdoors", area: "Southwest of Abilene", blurb: "Shady pecan groves along Elm Creek, with a swimming pool built by the Civilian Conservation Corps." },
       { name: "Fort Phantom Hill", category: "Landmark", area: "North of Abilene", blurb: "The stone chimneys and ruins of an 1850s frontier fort, standing alone on the prairie." }
+    ]
+  },
+  {
+    slug: "lockhart",
+    tier: "town",
+    group: "Central Texas",
+    lat: 29.88, lon: -97.67,
+    name: "Lockhart",
+    region: "Central Texas",
+    tagline: "The Barbecue Capital of Texas, with a courthouse square to match.",
+    intro:
+      "The Texas Legislature named Lockhart the Barbecue Capital of Texas, and a lunch here explains why. Three legendary pits sit within a few blocks of a grand 1894 courthouse. Come hungry, then walk it off around the square.",
+    places: [
+      { name: "Kreuz Market", category: "Food", area: "North Colorado Street", blurb: "Serving since 1900, in a big brick hall with long pits. Brisket and sausage come on butcher paper, and tradition says you won't need sauce." },
+      { name: "Black's Barbecue", category: "Food", area: "Downtown", blurb: "Run by the same family since 1932. Known for its beef ribs and its homemade sausage." },
+      { name: "Smitty's Market", category: "Food", area: "Downtown", blurb: "In the original Kreuz Market building, where you walk past open fires to order straight from the pit." },
+      { name: "Chisholm Trail Bar-B-Q", category: "Food", area: "South Lockhart", blurb: "A cafeteria-style local favorite with a long list of sides." },
+      { name: "Caldwell County Courthouse", category: "Landmark", area: "Downtown", blurb: "An ornate 1894 Second Empire courthouse at the center of the square." },
+      { name: "Lockhart Square", category: "Neighborhood", area: "Downtown", blurb: "Antique shops, cafés and a bakery around the courthouse, all walkable after lunch." },
+      { name: "Dr. Eugene Clark Library", category: "Landmark", area: "Downtown", blurb: "Opened in 1899, it's known as the oldest continuously operating public library in Texas." },
+      { name: "Lockhart State Park", category: "Outdoors", area: "South of Town", blurb: "A small park built by the Civilian Conservation Corps, with a nine-hole golf course, a pool and creekside trails." },
+      { name: "City Market, Luling", category: "Food", area: "Luling", blurb: "Twenty minutes south, a smoke-filled back room serving brisket, ribs and sausage that rival anything in Lockhart." },
+      { name: "Palmetto State Park", category: "Outdoors", area: "Near Luling", blurb: "Dwarf palmettos and swampy trails along the San Marcos River, looking more like Louisiana than Central Texas." }
+    ]
+  },
+  {
+    slug: "wimberley",
+    tier: "town",
+    group: "Central Texas",
+    lat: 30.0, lon: -98.1,
+    name: "Wimberley",
+    region: "Hill Country",
+    tagline: "Swimming holes, a hilltop climb and a big monthly market.",
+    intro:
+      "Wimberley sits where Cypress Creek meets the Blanco River, and its best days involve cold water. Swim at Blue Hole or Jacob's Well, browse the shops on the square, and come on the first Saturday of the month for Market Days.",
+    places: [
+      { name: "Jacob's Well Natural Area", category: "Nature", area: "North of Town", blurb: "An artesian spring that drops into a deep underwater cave. Seen from above, it looks like a hole into the earth.", tip: "Swimming is seasonal and by reservation." },
+      { name: "Blue Hole Regional Park", category: "Outdoors", area: "Downtown", blurb: "A spring-fed swimming hole under tall cypress trees, with rope swings and a grassy lawn.", tip: "Summer swimming requires a reservation." },
+      { name: "Wimberley Market Days", category: "Shopping", area: "Lions Field", blurb: "Hundreds of vendors on the first Saturday of the month, March through December. One of the largest outdoor markets in Texas." },
+      { name: "Wimberley Square", category: "Neighborhood", area: "Downtown", blurb: "Galleries, boutiques and ice cream along the creek in the center of town." },
+      { name: "Old Baldy", category: "Outdoors", area: "Downtown", blurb: "A short, steep staircase up a limestone hill to a view over the valley." },
+      { name: "Wimberley Glassworks", category: "Shopping", area: "South of Town", blurb: "Watch artists blow glass in a working studio, then shop the showroom." },
+      { name: "EmilyAnn Theatre & Gardens", category: "Music", area: "Wimberley", blurb: "An outdoor theater and gardens known for summer Shakespeare and community performances." },
+      { name: "Cypress Creek Nature Trail", category: "Outdoors", area: "Downtown", blurb: "A short, shady trail along the creek, right off the square." },
+      { name: "Devil's Backbone", category: "Outdoors", area: "Ranch Road 32", blurb: "A scenic drive along a high ridge between Wimberley and Canyon Lake, with views across the Hill Country." },
+      { name: "Hamilton Pool Preserve", category: "Nature", area: "Dripping Springs", blurb: "About forty minutes north: a collapsed grotto with a waterfall pouring into a jade-green pool.", tip: "Reservations are required, and swimming depends on water quality." }
+    ]
+  },
+  {
+    slug: "rockport",
+    tier: "town",
+    group: "Gulf Coast",
+    lat: 28.02, lon: -97.05,
+    name: "Rockport",
+    region: "Coastal Bend",
+    tagline: "Whooping cranes, an ancient oak and a quiet bay beach.",
+    intro:
+      "Rockport and its neighbor Fulton are art and birding towns on Aransas Bay. Winter brings endangered whooping cranes to the marshes nearby. The rest of the year, it's calm water, fresh seafood and a thousand-year-old live oak.",
+    places: [
+      { name: "Aransas National Wildlife Refuge", category: "Nature", area: "Northeast of Town", blurb: "Winter home of the last natural flock of whooping cranes, North America's tallest bird.", tip: "Cranes are here roughly November through March. Boat tours from Rockport get you closest." },
+      { name: "Goose Island State Park", category: "Outdoors", area: "Lamar", blurb: "Bayfront camping and fishing, plus the Big Tree, a coastal live oak estimated to be more than a thousand years old." },
+      { name: "Rockport Beach", category: "Outdoors", area: "Downtown", blurb: "A calm, shallow bay beach that's good for families, with a pavilion and birding platforms." },
+      { name: "Fulton Mansion State Historic Site", category: "Landmark", area: "Fulton", blurb: "An 1870s mansion on the bay with gas lighting, plumbing and central heat, which were remarkable for the time." },
+      { name: "Texas Maritime Museum", category: "Museum", area: "Rockport Harbor", blurb: "Shipbuilding, fishing and the offshore oil story of the Texas coast." },
+      { name: "Rockport Center for the Arts", category: "Museum", area: "Downtown", blurb: "Galleries and a sculpture garden at the heart of a town long known for its artists." },
+      { name: "Aquarium at Rockport Harbor", category: "Family", area: "Rockport Harbor", blurb: "A small, free aquarium focused on the fish and creatures of the local bays." },
+      { name: "Connie Hagar Cottage Sanctuary", category: "Nature", area: "Downtown", blurb: "A small birding sanctuary named for the self-taught ornithologist who put Rockport on the birding map." },
+      { name: "HummerBird Celebration", category: "Nature", area: "Rockport-Fulton", blurb: "Each September, thousands of migrating hummingbirds pass through, and the towns celebrate with tours and talks." },
+      { name: "Fulton Harbor", category: "Food", area: "Fulton", blurb: "Shrimp boats, fishing piers and casual seafood restaurants along the water." }
+    ]
+  },
+  {
+    slug: "port-aransas",
+    tier: "town",
+    group: "Gulf Coast",
+    lat: 27.83, lon: -97.06,
+    name: "Port Aransas",
+    region: "Coastal Bend",
+    tagline: "A beach town reached by free ferry, with dolphins in the channel.",
+    intro:
+      "Port Aransas sits at the north end of Mustang Island, and most people arrive the fun way: on a free car ferry, often with dolphins alongside. It's a laid-back beach town with golf carts, fishing boats and miles of Gulf sand.",
+    places: [
+      { name: "Port Aransas Beach", category: "Outdoors", area: "Gulf Side", blurb: "Wide Gulf beaches where you can drive and park on the sand.", tip: "A beach parking permit is required. Buy one in town." },
+      { name: "Port Aransas Ferry", category: "Landmark", area: "Harbor Island", blurb: "Free car ferries run around the clock across the ship channel. Watch for dolphins on the short ride." },
+      { name: "Leonabelle Turnbull Birding Center", category: "Nature", area: "Port Aransas", blurb: "A boardwalk over a wetland with herons, roseate spoonbills and resident alligators." },
+      { name: "Roberts Point Park", category: "Outdoors", area: "Harbor", blurb: "A waterfront park where huge tankers pass close by in the channel, often with dolphins in their wake." },
+      { name: "San José Island", category: "Outdoors", area: "Across the Channel", blurb: "An undeveloped barrier island reached by a short jetty boat ride, with empty beaches and great shelling." },
+      { name: "Horace Caldwell Pier", category: "Outdoors", area: "Gulf Side", blurb: "A long fishing pier reaching out into the Gulf, also popular for sunrise walks." },
+      { name: "Deep-Sea Fishing Charters", category: "Outdoors", area: "Harbor", blurb: "Party boats and private charters head offshore for red snapper, kingfish and more." },
+      { name: "Amos Rehabilitation Keep", category: "Nature", area: "Marine Science Institute", blurb: "A rehab center for injured sea turtles and coastal birds, run by the University of Texas Marine Science Institute." },
+      { name: "Port Aransas Museum", category: "Museum", area: "Downtown", blurb: "A small museum about the island's fishing and storm history, in a restored early home." },
+      { name: "Port Aransas Art Center", category: "Museum", area: "Downtown", blurb: "A gallery of local and regional artists, with classes and coastal-themed shows." }
+    ]
+  },
+  {
+    slug: "jefferson",
+    tier: "town",
+    group: "East Texas",
+    lat: 32.76, lon: -94.35,
+    name: "Jefferson",
+    region: "Piney Woods",
+    tagline: "A riverport frozen in the 1800s, near the cypress swamps of Caddo Lake.",
+    intro:
+      "Steamboats once made Jefferson one of the busiest ports in Texas. When the river trade ended, the town kept its brick streets, mansions and hotels. Today it's a base for antiques, ghost stories and the moss-draped cypress of Caddo Lake.",
+    places: [
+      { name: "Caddo Lake State Park", category: "Outdoors", area: "Karnack", blurb: "Bald cypress hung with Spanish moss, in a maze of bayous and sloughs. Rent a canoe and paddle the marked trails." },
+      { name: "Caddo Lake Boat Tours", category: "Nature", area: "Uncertain", blurb: "Guided boat rides from the tiny town of Uncertain into the swamp, with stories and wildlife." },
+      { name: "Historic Downtown Jefferson", category: "Neighborhood", area: "Downtown", blurb: "Brick streets lined with antique shops, cafés and buildings from the town's steamboat era." },
+      { name: "Excelsior House Hotel", category: "Landmark", area: "Downtown", blurb: "Operating since the 1850s, among the oldest hotels in Texas. Guests have included presidents." },
+      { name: "Jay Gould's Railroad Car", category: "Landmark", area: "Downtown", blurb: "The Atalanta, the private rail car of railroad tycoon Jay Gould, parked across from the Excelsior House." },
+      { name: "Jefferson Historical Museum", category: "Museum", area: "Downtown", blurb: "In an 1888 federal courthouse and post office, filled with the town's history." },
+      { name: "Turning Basin Riverboat Tours", category: "Nature", area: "Big Cypress Bayou", blurb: "A slow boat ride on Big Cypress Bayou, where steamboats once turned around." },
+      { name: "House of the Seasons", category: "Landmark", area: "Jefferson", blurb: "An 1872 house with a cupola of colored glass that bathes the room in a different color for each season." },
+      { name: "Jefferson Ghost Walk", category: "Quirky", area: "Downtown", blurb: "Evening walking tours through a town that calls itself one of the most haunted in Texas." },
+      { name: "Lake O' the Pines", category: "Outdoors", area: "West of Jefferson", blurb: "A large reservoir in the pines with boating, fishing and campgrounds." }
+    ]
+  },
+  {
+    slug: "brenham",
+    tier: "town",
+    group: "Central Texas",
+    lat: 30.17, lon: -96.4,
+    name: "Brenham",
+    region: "Brazos Valley",
+    tagline: "Blue Bell ice cream, bluebonnet backroads and the birthplace of Texas.",
+    intro:
+      "Brenham is the home of Blue Bell ice cream and the center of some of the prettiest country in Texas. In spring, the backroads turn blue with wildflowers. Nearby, Washington-on-the-Brazos marks where Texas declared its independence.",
+    places: [
+      { name: "Blue Bell Creameries", category: "Food", area: "Brenham", blurb: "The visitor center tells the creamery's story, and the parlor serves a scoop at the end.", tip: "Check ahead for visitor center hours." },
+      { name: "Washington-on-the-Brazos State Historic Site", category: "Landmark", area: "Washington", blurb: "Where delegates signed the Texas Declaration of Independence in March 1836. A replica of Independence Hall stands on the site." },
+      { name: "Round Top", category: "Shopping", area: "Round Top", blurb: "A tiny town that hosts some of the biggest antique shows in the country each spring and fall." },
+      { name: "Antique Rose Emporium", category: "Outdoors", area: "Independence", blurb: "Display gardens full of old garden roses and cottage plants, in the countryside north of Brenham." },
+      { name: "Downtown Brenham", category: "Neighborhood", area: "Downtown", blurb: "A walkable historic downtown with shops, restaurants and a restored theater." },
+      { name: "Chappell Hill", category: "Neighborhood", area: "Chappell Hill", blurb: "A historic village east of Brenham with a main street, a lavender farm and spring wildflowers." },
+      { name: "Bluebonnet Backroads", category: "Nature", area: "Washington County", blurb: "Country roads that bloom with bluebonnets and other wildflowers each spring.", tip: "Peak is usually late March to mid-April. Stay off private property." },
+      { name: "Unity Theatre", category: "Music", area: "Downtown", blurb: "A professional theater in downtown Brenham, presenting plays and musicals through the year." },
+      { name: "Old Baylor Park", category: "Landmark", area: "Independence", blurb: "Ruins on the original site of Baylor University, founded in Independence in 1845." },
+      { name: "Washington County Fair", category: "Family", area: "Brenham", blurb: "Held each September and billed as the oldest county fair in Texas." }
+    ]
+  },
+  {
+    slug: "granbury",
+    tier: "town",
+    group: "North Texas",
+    lat: 32.44, lon: -97.79,
+    name: "Granbury",
+    region: "North Texas",
+    tagline: "A courthouse square on the Brazos, with dinosaur tracks nearby.",
+    intro:
+      "Granbury's 1890 courthouse square is one of the best preserved in Texas, and the town around it leans into the lake. Half an hour south, the riverbed at Dinosaur Valley holds tracks left more than 100 million years ago.",
+    places: [
+      { name: "Historic Granbury Square", category: "Neighborhood", area: "Downtown", blurb: "Shops, restaurants and wine bars around the 1890 Hood County Courthouse." },
+      { name: "Granbury Opera House", category: "Music", area: "Downtown", blurb: "An 1886 opera house on the square, restored and home to musicals and plays." },
+      { name: "Granbury City Beach", category: "Outdoors", area: "Lake Granbury", blurb: "A sandy beach on Lake Granbury, a few minutes' walk from the square." },
+      { name: "Dinosaur Valley State Park", category: "Nature", area: "Glen Rose", blurb: "Some of the best-preserved dinosaur tracks in the world, in the bed of the Paluxy River.", tip: "Track viewing depends on river levels. Check conditions before you go." },
+      { name: "Fossil Rim Wildlife Center", category: "Family", area: "Glen Rose", blurb: "A drive-through wildlife center focused on conservation, with giraffes, rhinos and cheetahs." },
+      { name: "Brazos Drive-In", category: "Quirky", area: "Granbury", blurb: "One of the oldest drive-in theaters still running in Texas, showing double features on weekends." },
+      { name: "Hood County Old Jail Museum", category: "Museum", area: "Downtown", blurb: "The 1885 stone jail, preserved with its original cell block." },
+      { name: "Acton State Historic Site", category: "Landmark", area: "Acton", blurb: "The grave of Elizabeth Crockett, Davy Crockett's widow. It's the smallest state historic site in Texas." },
+      { name: "Revolver Brewing", category: "Food", area: "Granbury", blurb: "A well-known Texas brewery with a taproom and a tree-shaded yard." },
+      { name: "Granbury Ghosts & Legends Tour", category: "Quirky", area: "Downtown", blurb: "Evening walking tours of the square's stories, including legends about John Wilkes Booth and Jesse James." }
+    ]
+  },
+  {
+    slug: "kerrville",
+    tier: "town",
+    group: "Central Texas",
+    lat: 30.05, lon: -99.14,
+    name: "Kerrville",
+    region: "Hill Country",
+    tagline: "The Guadalupe River, Western art and a famous folk festival.",
+    intro:
+      "Kerrville sits on a clear stretch of the Guadalupe River in the heart of the Hill Country. A river trail ties the town together, and the drive west along the river leads to small towns, summer camps and some of the best fall color in Texas.",
+    places: [
+      { name: "Museum of Western Art", category: "Museum", area: "Kerrville", blurb: "Paintings and sculpture of the American West, in a building made with hand-made adobe and mesquite." },
+      { name: "Kerrville-Schreiner Park", category: "Outdoors", area: "South Kerrville", blurb: "A riverside park with swimming, paddling, camping and miles of trails." },
+      { name: "Kerrville River Trail", category: "Outdoors", area: "Along the Guadalupe", blurb: "A paved trail along the river that links parks and downtown." },
+      { name: "Coming King Sculpture Prayer Garden", category: "Landmark", area: "West Kerrville", blurb: "A hilltop garden with a giant cross and views over the city." },
+      { name: "Kerrville Folk Festival", category: "Music", area: "Quiet Valley Ranch", blurb: "One of the longest-running folk music festivals in the country, held each spring." },
+      { name: "Riverside Nature Center", category: "Nature", area: "Downtown", blurb: "Native plant gardens and an arboretum along Town Creek, with trails and plant sales." },
+      { name: "Hill Country Arts Foundation", category: "Music", area: "Ingram", blurb: "Galleries, workshops and an outdoor theater on the Guadalupe in nearby Ingram." },
+      { name: "Stonehenge II", category: "Quirky", area: "Ingram", blurb: "A partial replica of Stonehenge, plus two Easter Island-style heads, on the arts foundation grounds." },
+      { name: "Schreiner Mansion", category: "Museum", area: "Downtown", blurb: "The home of merchant Charles Schreiner, now a museum of local history." },
+      { name: "Lost Maples State Natural Area", category: "Outdoors", area: "Vanderpool", blurb: "About an hour west: canyons of bigtooth maples that turn red and gold in the fall.", tip: "Peak color is usually early to mid-November. Reserve day passes ahead." }
     ]
   }
 ];

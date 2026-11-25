@@ -569,5 +569,292 @@
  "nacogdoches/city": {
   "skip": true,
   "why": "lead image is a county locator map"
+ },
+ "lockhart/Kreuz Market": {
+  "article": "Kreuz Market"
+ },
+ "lockhart/Black's Barbecue": {
+  "article": "Black's Barbecue"
+ },
+ "lockhart/Smitty's Market": {
+  "article": "Smitty's Market"
+ },
+ "lockhart/Chisholm Trail Bar-B-Q": {
+  "skip": true,
+  "why": "no suitable free photo on Wikipedia"
+ },
+ "lockhart/Caldwell County Courthouse": {
+  "article": "Caldwell County Courthouse (Texas)"
+ },
+ "lockhart/Lockhart Square": {
+  "skip": true,
+  "why": "no suitable free photo on Wikipedia"
+ },
+ "lockhart/Dr. Eugene Clark Library": {
+  "skip": true,
+  "why": "lead image is the courthouse"
+ },
+ "lockhart/Lockhart State Park": {
+  "article": "Lockhart State Park"
+ },
+ "lockhart/City Market, Luling": {
+  "skip": true,
+  "why": "no suitable free photo on Wikipedia"
+ },
+ "lockhart/Palmetto State Park": {
+  "article": "Palmetto State Park"
+ },
+ "wimberley/Jacob's Well Natural Area": {
+  "article": "Jacob's Well (Texas)"
+ },
+ "wimberley/Blue Hole Regional Park": {
+  "skip": true,
+  "why": "no suitable free photo on Wikipedia"
+ },
+ "wimberley/Wimberley Market Days": {
+  "skip": true,
+  "why": "no suitable free photo on Wikipedia"
+ },
+ "wimberley/Wimberley Square": {
+  "skip": true,
+  "why": "no suitable free photo on Wikipedia"
+ },
+ "wimberley/Old Baldy": {
+  "skip": true,
+  "why": "no suitable free photo on Wikipedia"
+ },
+ "wimberley/Wimberley Glassworks": {
+  "skip": true,
+  "why": "no suitable free photo on Wikipedia"
+ },
+ "wimberley/EmilyAnn Theatre & Gardens": {
+  "skip": true,
+  "why": "no suitable free photo on Wikipedia"
+ },
+ "wimberley/Cypress Creek Nature Trail": {
+  "skip": true,
+  "why": "no suitable free photo on Wikipedia"
+ },
+ "wimberley/Devil's Backbone": {
+  "skip": true,
+  "why": "no suitable free photo on Wikipedia"
+ },
+ "wimberley/Hamilton Pool Preserve": {
+  "article": "Hamilton Pool Preserve"
+ },
+ "rockport/Aransas National Wildlife Refuge": {
+  "article": "Aransas National Wildlife Refuge"
+ },
+ "rockport/Goose Island State Park": {
+  "article": "Goose Island State Park"
+ },
+ "rockport/Rockport Beach": {
+  "skip": true,
+  "why": "no suitable free photo on Wikipedia"
+ },
+ "rockport/Fulton Mansion State Historic Site": {
+  "article": "Fulton Mansion"
+ },
+ "rockport/Texas Maritime Museum": {
+  "article": "Texas Maritime Museum"
+ },
+ "rockport/Rockport Center for the Arts": {
+  "skip": true,
+  "why": "no suitable free photo on Wikipedia"
+ },
+ "rockport/Aquarium at Rockport Harbor": {
+  "skip": true,
+  "why": "no suitable free photo on Wikipedia"
+ },
+ "rockport/Connie Hagar Cottage Sanctuary": {
+  "skip": true,
+  "why": "no suitable free photo on Wikipedia"
+ },
+ "rockport/HummerBird Celebration": {
+  "skip": true,
+  "why": "no suitable free photo on Wikipedia"
+ },
+ "rockport/Fulton Harbor": {
+  "skip": true,
+  "why": "no suitable free photo on Wikipedia"
+ },
+ "port-aransas/Port Aransas Beach": {
+  "skip": true,
+  "why": "no suitable free photo on Wikipedia"
+ },
+ "port-aransas/Port Aransas Ferry": {
+  "article": "Port Aransas Ferry"
+ },
+ "port-aransas/Leonabelle Turnbull Birding Center": {
+  "skip": true,
+  "why": "no suitable free photo on Wikipedia"
+ },
+ "port-aransas/Roberts Point Park": {
+  "skip": true,
+  "why": "no suitable free photo on Wikipedia"
+ },
+ "port-aransas/San José Island": {
+  "article": "San José Island"
+ },
+ "port-aransas/Horace Caldwell Pier": {
+  "skip": true,
+  "why": "no suitable free photo on Wikipedia"
+ },
+ "port-aransas/Deep-Sea Fishing Charters": {
+  "skip": true,
+  "why": "no suitable free photo on Wikipedia"
+ },
+ "port-aransas/Amos Rehabilitation Keep": {
+  "skip": true,
+  "why": "no suitable free photo on Wikipedia"
+ },
+ "port-aransas/Port Aransas Museum": {
+  "skip": true,
+  "why": "no suitable free photo on Wikipedia"
+ },
+ "port-aransas/Port Aransas Art Center": {
+  "skip": true,
+  "why": "no suitable free photo on Wikipedia"
+ },
+ "jefferson/Caddo Lake State Park": {
+  "article": "Caddo Lake State Park"
+ },
+ "jefferson/Caddo Lake Boat Tours": {
+  "article": "Caddo Lake"
+ },
+ "jefferson/Historic Downtown Jefferson": {
+  "skip": true,
+  "why": "no suitable free photo on Wikipedia"
+ },
+ "jefferson/Excelsior House Hotel": {
+  "skip": true,
+  "why": "lead image is the post office"
+ },
+ "jefferson/Jay Gould's Railroad Car": {
+  "skip": true,
+  "why": "no suitable free photo on Wikipedia"
+ },
+ "jefferson/Jefferson Historical Museum": {
+  "skip": true,
+  "why": "no suitable free photo on Wikipedia"
+ },
+ "jefferson/Turning Basin Riverboat Tours": {
+  "skip": true,
+  "why": "no suitable free photo on Wikipedia"
+ },
+ "jefferson/House of the Seasons": {
+  "article": "House of the Seasons"
+ },
+ "jefferson/Jefferson Ghost Walk": {
+  "skip": true,
+  "why": "no suitable free photo on Wikipedia"
+ },
+ "jefferson/Lake O' the Pines": {
+  "article": "Lake O' the Pines"
+ },
+ "brenham/Blue Bell Creameries": {
+  "article": "Blue Bell Creameries"
+ },
+ "brenham/Washington-on-the-Brazos State Historic Site": {
+  "article": "Washington-on-the-Brazos"
+ },
+ "brenham/Round Top": {
+  "article": "Round Top, Texas"
+ },
+ "brenham/Antique Rose Emporium": {
+  "skip": true,
+  "why": "no suitable free photo on Wikipedia"
+ },
+ "brenham/Downtown Brenham": {
+  "skip": true,
+  "why": "no suitable free photo on Wikipedia"
+ },
+ "brenham/Chappell Hill": {
+  "article": "Chappell Hill, Texas"
+ },
+ "brenham/Bluebonnet Backroads": {
+  "article": "Lupinus texensis"
+ },
+ "brenham/Unity Theatre": {
+  "skip": true,
+  "why": "no suitable free photo on Wikipedia"
+ },
+ "brenham/Old Baylor Park": {
+  "skip": true,
+  "why": "no suitable free photo on Wikipedia"
+ },
+ "brenham/Washington County Fair": {
+  "skip": true,
+  "why": "no suitable free photo on Wikipedia"
+ },
+ "granbury/Historic Granbury Square": {
+  "article": "Hood County Courthouse"
+ },
+ "granbury/Granbury Opera House": {
+  "article": "Granbury Opera House"
+ },
+ "granbury/Granbury City Beach": {
+  "skip": true,
+  "why": "lead image is a locator map"
+ },
+ "granbury/Dinosaur Valley State Park": {
+  "article": "Dinosaur Valley State Park"
+ },
+ "granbury/Fossil Rim Wildlife Center": {
+  "article": "Fossil Rim Wildlife Center"
+ },
+ "granbury/Brazos Drive-In": {
+  "skip": true,
+  "why": "no suitable free photo on Wikipedia"
+ },
+ "granbury/Hood County Old Jail Museum": {
+  "skip": true,
+  "why": "no suitable free photo on Wikipedia"
+ },
+ "granbury/Acton State Historic Site": {
+  "article": "Acton State Historic Site"
+ },
+ "granbury/Revolver Brewing": {
+  "skip": true,
+  "why": "no suitable free photo on Wikipedia"
+ },
+ "granbury/Granbury Ghosts & Legends Tour": {
+  "skip": true,
+  "why": "no suitable free photo on Wikipedia"
+ },
+ "kerrville/Museum of Western Art": {
+  "article": "Museum of Western Art"
+ },
+ "kerrville/Kerrville-Schreiner Park": {
+  "skip": true,
+  "why": "no suitable free photo on Wikipedia"
+ },
+ "kerrville/Kerrville River Trail": {
+  "skip": true,
+  "why": "no suitable free photo on Wikipedia"
+ },
+ "kerrville/Coming King Sculpture Prayer Garden": {
+  "article": "Coming King Sculpture Prayer Garden"
+ },
+ "kerrville/Kerrville Folk Festival": {
+  "article": "Kerrville Folk Festival"
+ },
+ "kerrville/Riverside Nature Center": {
+  "skip": true,
+  "why": "no suitable free photo on Wikipedia"
+ },
+ "kerrville/Hill Country Arts Foundation": {
+  "skip": true,
+  "why": "no suitable free photo on Wikipedia"
+ },
+ "kerrville/Stonehenge II": {
+  "article": "Stonehenge II"
+ },
+ "kerrville/Schreiner Mansion": {
+  "skip": true,
+  "why": "no suitable free photo on Wikipedia"
+ },
+ "kerrville/Lost Maples State Natural Area": {
+  "article": "Lost Maples State Natural Area"
  }
 }

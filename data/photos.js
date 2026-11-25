@@ -1422,5 +1422,326 @@ window.PHOTOS = {
     "alt": "Fort Phantom Hill"
    }
   }
+ },
+ "lockhart": {
+  "city": {
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Caldwell_County_Courthouse_2018a.jpg/960px-Caldwell_County_Courthouse_2018a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "w": 960,
+   "h": 720,
+   "credit": "Antony-22",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Caldwell_County_Courthouse_2018a.jpg",
+   "alt": "lockhart"
+  },
+  "places": {
+   "Black's Barbecue": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Black%27s_Barbecue.jpg/960px-Black%27s_Barbecue.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "w": 960,
+    "h": 720,
+    "credit": "T.Tseng",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Black%27s_Barbecue.jpg",
+    "alt": "Black's Barbecue"
+   },
+   "Caldwell County Courthouse": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Caldwell_County_Courthouse.jpg/960px-Caldwell_County_Courthouse.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "w": 960,
+    "h": 641,
+    "credit": "CMBJ",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Caldwell_County_Courthouse.jpg",
+    "alt": "Caldwell County Courthouse"
+   },
+   "Lockhart State Park": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Lockhart_state_park_combination_building.jpg/960px-Lockhart_state_park_combination_building.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "w": 960,
+    "h": 640,
+    "credit": "Larry D. Moore",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Lockhart_state_park_combination_building.jpg",
+    "alt": "Lockhart State Park"
+   },
+   "Palmetto State Park": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Palmetto_state_park.jpg/960px-Palmetto_state_park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "w": 960,
+    "h": 646,
+    "credit": "Larry D. Moore",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Palmetto_state_park.jpg",
+    "alt": "Palmetto State Park"
+   }
+  }
+ },
+ "wimberley": {
+  "city": {
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Wimberley_Texas_Downtown_3.JPG/960px-Wimberley_Texas_Downtown_3.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "w": 960,
+   "h": 640,
+   "credit": "Travis K. Witt",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Wimberley_Texas_Downtown_3.JPG",
+   "alt": "wimberley"
+  },
+  "places": {
+   "Jacob's Well Natural Area": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Jacob%27s_Well_Vertical.jpg/960px-Jacob%27s_Well_Vertical.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "w": 960,
+    "h": 1280,
+    "credit": "TerraFrost",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Jacob%27s_Well_Vertical.jpg",
+    "alt": "Jacob's Well Natural Area"
+   },
+   "Hamilton Pool Preserve": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Hamilton_Pool_and_Falls.jpg/960px-Hamilton_Pool_and_Falls.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "w": 960,
+    "h": 631,
+    "credit": "Eric in SF",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Hamilton_Pool_and_Falls.jpg",
+    "alt": "Hamilton Pool Preserve"
+   }
+  }
+ },
+ "rockport": {
+  "city": {
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Rockport%2C_Texas.jpg/960px-Rockport%2C_Texas.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "w": 960,
+   "h": 640,
+   "credit": "BrianGrunberger",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Rockport,_Texas.jpg",
+   "alt": "rockport"
+  },
+  "places": {
+   "Aransas National Wildlife Refuge": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Aransas_national_wildlife_refuge1.jpg/960px-Aransas_national_wildlife_refuge1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "w": 960,
+    "h": 585,
+    "credit": "Larry D. Moore",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Aransas_national_wildlife_refuge1.jpg",
+    "alt": "Aransas National Wildlife Refuge"
+   },
+   "Goose Island State Park": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Big_tree.jpg/960px-Big_tree.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "w": 960,
+    "h": 695,
+    "credit": "Larry D. Moore",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Big_tree.jpg",
+    "alt": "Goose Island State Park"
+   },
+   "Fulton Mansion State Historic Site": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Fulton_Mansion_Texas_2024.jpg/960px-Fulton_Mansion_Texas_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "w": 960,
+    "h": 640,
+    "credit": "Larry D. Moore",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Fulton_Mansion_Texas_2024.jpg",
+    "alt": "Fulton Mansion State Historic Site"
+   }
+  }
+ },
+ "port-aransas": {
+  "city": {
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Port_Aransas%2C_Texas.jpg/960px-Port_Aransas%2C_Texas.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "w": 960,
+   "h": 587,
+   "credit": "Quintin Soloviev",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Port_Aransas,_Texas.jpg",
+   "alt": "port-aransas"
+  },
+  "places": {}
+ },
+ "jefferson": {
+  "city": {
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/PostOfficeJefferson1.JPG/960px-PostOfficeJefferson1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "w": 960,
+   "h": 680,
+   "credit": "Renelibrary",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:PostOfficeJefferson1.JPG",
+   "alt": "jefferson"
+  },
+  "places": {
+   "Caddo Lake State Park": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Canoeing_Caddo_Lake_State_Park_Texas_2023.jpg/960px-Canoeing_Caddo_Lake_State_Park_Texas_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "w": 960,
+    "h": 540,
+    "credit": "Larry D. Moore",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Canoeing_Caddo_Lake_State_Park_Texas_2023.jpg",
+    "alt": "Caddo Lake State Park"
+   },
+   "Caddo Lake Boat Tours": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Caddo_Lake-_Cypress.jpg/960px-Caddo_Lake-_Cypress.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "w": 960,
+    "h": 720,
+    "credit": "Jay Carriker (User:JCarriker)",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Caddo_Lake-_Cypress.jpg",
+    "alt": "Caddo Lake Boat Tours"
+   },
+   "Lake O' the Pines": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Lake_O_the_Pines_Texas.jpg/960px-Lake_O_the_Pines_Texas.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "w": 960,
+    "h": 640,
+    "credit": "U.S. Army Corps of Engineers, photographer not specified or unknown",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Lake_O_the_Pines_Texas.jpg",
+    "alt": "Lake O' the Pines"
+   }
+  }
+ },
+ "brenham": {
+  "city": {
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Washington_County_Courthouse_Brenham_Texas_USA_DSC_1952_ad.jpg/960px-Washington_County_Courthouse_Brenham_Texas_USA_DSC_1952_ad.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "w": 960,
+   "h": 640,
+   "credit": "Adavyd",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Washington_County_Courthouse_Brenham_Texas_USA_DSC_1952_ad.jpg",
+   "alt": "brenham"
+  },
+  "places": {
+   "Washington-on-the-Brazos State Historic Site": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Independence_Hall%2C_Washington_on_the_Brazos%2C_Texas.jpg/960px-Independence_Hall%2C_Washington_on_the_Brazos%2C_Texas.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "w": 960,
+    "h": 500,
+    "credit": "Noconatom",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Independence_Hall,_Washington_on_the_Brazos,_Texas.jpg",
+    "alt": "Washington-on-the-Brazos State Historic Site"
+   },
+   "Round Top": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/RoundTop2_%281_of_1%29.jpg/960px-RoundTop2_%281_of_1%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "w": 960,
+    "h": 462,
+    "credit": "Renelibrary",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:RoundTop2_(1_of_1).jpg",
+    "alt": "Round Top"
+   },
+   "Chappell Hill": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/ChappellHillMainStreet10.JPG/960px-ChappellHillMainStreet10.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "w": 960,
+    "h": 640,
+    "credit": "Renelibrary",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:ChappellHillMainStreet10.JPG",
+    "alt": "Chappell Hill"
+   },
+   "Bluebonnet Backroads": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Bluebonnet-8100.jpg/960px-Bluebonnet-8100.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "w": 960,
+    "h": 1280,
+    "credit": "Loadmaster (David R. Tribble) This image was made by Loadmaster (David R. Tri…",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Bluebonnet-8100.jpg",
+    "alt": "Bluebonnet Backroads"
+   }
+  }
+ },
+ "granbury": {
+  "city": {
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Granbury_June_2018_35_%28Hood_County_Courthouse%29.jpg/960px-Granbury_June_2018_35_%28Hood_County_Courthouse%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "w": 960,
+   "h": 687,
+   "credit": "Michael Barera",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Granbury_June_2018_35_(Hood_County_Courthouse).jpg",
+   "alt": "granbury"
+  },
+  "places": {
+   "Historic Granbury Square": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Hood_County_Courthouse_%281_of_1%29.jpg/960px-Hood_County_Courthouse_%281_of_1%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "w": 960,
+    "h": 550,
+    "credit": "Renelibrary",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Hood_County_Courthouse_(1_of_1).jpg",
+    "alt": "Historic Granbury Square"
+   },
+   "Dinosaur Valley State Park": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/River_with_dinosaur_footprints.png/960px-River_with_dinosaur_footprints.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "w": 960,
+    "h": 1280,
+    "credit": "DatraxMada",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:River_with_dinosaur_footprints.png",
+    "alt": "Dinosaur Valley State Park"
+   },
+   "Fossil Rim Wildlife Center": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Blackbuck_antelope_in_Texas.jpg/960px-Blackbuck_antelope_in_Texas.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "w": 960,
+    "h": 720,
+    "credit": "Res2216firestar",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Blackbuck_antelope_in_Texas.jpg",
+    "alt": "Fossil Rim Wildlife Center"
+   },
+   "Acton State Historic Site": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Acton_state_historic_site_2009.jpg/960px-Acton_state_historic_site_2009.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "w": 960,
+    "h": 788,
+    "credit": "Larry D. Moore",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Acton_state_historic_site_2009.jpg",
+    "alt": "Acton State Historic Site"
+   }
+  }
+ },
+ "kerrville": {
+  "city": {
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Kerrville%2C_tx_city_hall_2015.jpg/960px-Kerrville%2C_tx_city_hall_2015.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "w": 960,
+   "h": 640,
+   "credit": "Larry D. Moore",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Kerrville,_tx_city_hall_2015.jpg",
+   "alt": "kerrville"
+  },
+  "places": {
+   "Lost Maples State Natural Area": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Lost_Maples_Scenic_Overlook_2021.jpg/960px-Lost_Maples_Scenic_Overlook_2021.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "w": 960,
+    "h": 540,
+    "credit": "Larry D. Moore",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Lost_Maples_Scenic_Overlook_2021.jpg",
+    "alt": "Lost Maples State Natural Area"
+   }
+  }
  }
 };

@@ -1,7 +1,8 @@
 # Texas Top 10 — Tasks
 
 ## Done
-- [x] 18 cities, 10 places each (180 places), grouped into six regions
+- [x] 18 cities and 8 small towns, 10 places each (260 places), grouped into six regions
+- [x] Map zoom and pan (+/− buttons, pinch, Ctrl+scroll, drag); small towns appear only when zoomed in
 - [x] Fuller description and time-to-allow for every place
 - [x] Clean, minimal design with system fonts and editorial copy
 - [x] Interactive map built from real US Census boundaries: Texas, counties, interstates, Gulf and neighbors
@@ -14,6 +15,6 @@
 - [x] Navigation without the map: Cities menu by region, region filter, search that finds places, Explore page with filters, place detail popup, "In this list" jump links
 
 ## Next
-- [ ] Photos for the 62 places still without one (see `skip` entries in tools/photo_overrides.json)
+- [ ] Photos for the 121 places still without one (see `skip` entries in tools/photo_overrides.json)
 - [ ] Fact-check every entry against official sources
 - [ ] Halfway point: create GitHub repo and publish a demo URL with GitHub Pages

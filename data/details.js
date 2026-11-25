@@ -216,5 +216,101 @@ window.DETAILS = {
     "Perini Ranch Steakhouse": ["Reservations are recommended, especially on weekends.", "2 hours"],
     "Abilene State Park": ["The park has camping, hiking and a small lake nearby.", "Half day"],
     "Fort Phantom Hill": ["The site is open to visitors free of charge, with interpretive signs.", "45 minutes"]
+  },
+  "lockhart": {
+    "Kreuz Market": ["Order at the pit counter by the pound, then grab sides inside. The building is huge, so even busy days move quickly.", "1 hour"],
+    "Black's Barbecue": ["The dining room walls are covered with decades of family photos and memorabilia.", "1 hour"],
+    "Smitty's Market": ["The smoke-blackened pit room is one of the most photographed spots in Texas barbecue.", "1 hour"],
+    "Chisholm Trail Bar-B-Q": ["Locals come for the plates and the long list of sides, at friendly prices.", "45 minutes"],
+    "Caldwell County Courthouse": ["The courthouse has appeared in several films. It's best seen from the corners of the square.", "20 minutes"],
+    "Lockhart Square": ["Plan a lap of the square between barbecue stops. Most shops close by early evening.", "1 hour"],
+    "Dr. Eugene Clark Library": ["The library still serves the town today. Step inside to see the original reading room.", "20 minutes"],
+    "Lockhart State Park": ["The park sits on Clear Fork Creek just a few minutes from downtown.", "2 hours"],
+    "City Market, Luling": ["Order meat in the pit room, then sides in the dining room. Luling's pumpjacks are painted as folk art around town.", "1 hour"],
+    "Palmetto State Park": ["Rent a canoe or tube for the river, or walk the short swamp trail.", "2 hours"]
+  },
+  "wimberley": {
+    "Jacob's Well Natural Area": ["The well is one of the longest underwater caves in Texas. Diving is off limits, but the hike to the well is open year-round.", "1–2 hours"],
+    "Blue Hole Regional Park": ["Outside swimming season, the park's trails and lawns are open for walking.", "2–3 hours"],
+    "Wimberley Market Days": ["Vendors sell crafts, antiques, food and plants. Arrive early to beat the heat and the crowds.", "Half day"],
+    "Wimberley Square": ["Park once and walk; most shops are within a few blocks.", "2 hours"],
+    "Old Baldy": ["It's a quick climb, so it's a good stop before dinner in town.", "30 minutes"],
+    "Wimberley Glassworks": ["Demonstrations happen on many days. Pieces range from small ornaments to lighting.", "45 minutes"],
+    "EmilyAnn Theatre & Gardens": ["The gardens are open to wander when there's no performance.", "An evening"],
+    "Cypress Creek Nature Trail": ["The trail is easy and good for kids.", "30 minutes"],
+    "Devil's Backbone": ["Pull over at the scenic overlook. A historic tavern along the route has a local legend or two.", "1 hour"],
+    "Hamilton Pool Preserve": ["The trail down to the pool is short but steep and rocky.", "2–3 hours"]
+  },
+  "rockport": {
+    "Aransas National Wildlife Refuge": ["A tour loop and an observation tower let you scan the marsh. Alligators and deer are common too.", "Half day"],
+    "Goose Island State Park": ["The Big Tree is on the mainland side of the park, a short drive from the campgrounds.", "2–3 hours"],
+    "Rockport Beach": ["The beach is next to the harbor, so it pairs well with the museums nearby.", "2 hours"],
+    "Fulton Mansion State Historic Site": ["Guided tours run through the day. The grounds face the bay.", "1 hour"],
+    "Texas Maritime Museum": ["Exhibits include boat models and the history of Texas ports.", "1 hour"],
+    "Rockport Center for the Arts": ["The center hosts an art festival over the Fourth of July weekend.", "1 hour"],
+    "Aquarium at Rockport Harbor": ["It's run by volunteers and makes a quick, easy stop with kids.", "30 minutes"],
+    "Connie Hagar Cottage Sanctuary": ["A short loop trail and viewing areas make it easy to visit.", "45 minutes"],
+    "HummerBird Celebration": ["Events include garden tours, banding demonstrations and talks.", "Half day"],
+    "Fulton Harbor": ["Buy shrimp right off the boats when they're in.", "1–2 hours"]
+  },
+  "port-aransas": {
+    "Port Aransas Beach": ["The beach stretches south along Mustang Island toward Corpus Christi.", "Half day"],
+    "Port Aransas Ferry": ["Lines can be long on summer weekends. The trip itself takes only a few minutes.", "30 minutes"],
+    "Leonabelle Turnbull Birding Center": ["Admission is free. Mornings are best for birds.", "45 minutes"],
+    "Roberts Point Park": ["The park has a playground, a pavilion and a viewing tower.", "45 minutes"],
+    "San José Island": ["There are no services on the island, so bring water and shade.", "Half day"],
+    "Horace Caldwell Pier": ["Bait and tackle are available near the pier.", "1–2 hours"],
+    "Deep-Sea Fishing Charters": ["Trips range from a few hours to overnight. Book ahead in summer.", "Half to full day"],
+    "Amos Rehabilitation Keep": ["Visiting hours are limited. Check before you go.", "30 minutes"],
+    "Port Aransas Museum": ["Exhibits cover the island's early settlers, fishermen and storms.", "45 minutes"],
+    "Port Aransas Art Center": ["Exhibits change through the year.", "30 minutes"]
+  },
+  "jefferson": {
+    "Caddo Lake State Park": ["Caddo Lake is one of the few natural lakes in Texas. Cabins built by the Civilian Conservation Corps are available.", "Half day"],
+    "Caddo Lake Boat Tours": ["Tours typically last one to two hours. Bring bug spray in summer.", "2 hours"],
+    "Historic Downtown Jefferson": ["Many buildings date from the 1800s. Horse-drawn carriage rides are offered.", "2–3 hours"],
+    "Excelsior House Hotel": ["Tours of the hotel are offered, and the dining room serves breakfast.", "45 minutes"],
+    "Jay Gould's Railroad Car": ["Tours show the car's ornate interior.", "30 minutes"],
+    "Jefferson Historical Museum": ["Several floors of exhibits cover the steamboat era and the Civil War.", "1 hour"],
+    "Turning Basin Riverboat Tours": ["The guide tells stories of the town's river days.", "1 hour"],
+    "House of the Seasons": ["Tours are guided and include the house's original furnishings.", "1 hour"],
+    "Jefferson Ghost Walk": ["Tours start at dusk and last about an hour and a half.", "An evening"],
+    "Lake O' the Pines": ["Public parks around the lake have boat ramps and swimming areas.", "Half day"]
+  },
+  "brenham": {
+    "Blue Bell Creameries": ["The gift shop sells Blue Bell souvenirs alongside the parlor.", "1 hour"],
+    "Washington-on-the-Brazos State Historic Site": ["The site includes a living history farm and a museum about the Texas Revolution.", "Half day"],
+    "Round Top": ["Between the antique shows, Round Top is a quiet town with good restaurants and the Round Top Festival Institute.", "Half day"],
+    "Antique Rose Emporium": ["The gardens are free to stroll, and plants are for sale.", "1 hour"],
+    "Downtown Brenham": ["Look for the murals and the old Simon Theatre building.", "2 hours"],
+    "Chappell Hill": ["The village holds a bluebonnet festival each April.", "1–2 hours"],
+    "Bluebonnet Backroads": ["Local visitor centers publish wildflower driving routes each spring.", "Half day"],
+    "Unity Theatre": ["It's an intimate venue with close-up seating.", "An evening"],
+    "Old Baylor Park": ["The columns of the old women's college building still stand on the hill.", "30 minutes"],
+    "Washington County Fair": ["Expect livestock shows, rodeo, carnival rides and live music.", "Half day"]
+  },
+  "granbury": {
+    "Historic Granbury Square": ["Holiday lights and events fill the square in December.", "2 hours"],
+    "Granbury Opera House": ["Check the schedule; shows run most weekends.", "An evening"],
+    "Granbury City Beach": ["The beach has a playground and a walking trail along the shore.", "2 hours"],
+    "Dinosaur Valley State Park": ["Two life-size dinosaur models stand near the park entrance.", "Half day"],
+    "Fossil Rim Wildlife Center": ["You drive a nine-mile route at your own pace. Guided tours are also available.", "Half day"],
+    "Brazos Drive-In": ["Bring your own chairs, and tune your car radio for the sound.", "An evening"],
+    "Hood County Old Jail Museum": ["It's a quick stop on a walk around the square.", "30 minutes"],
+    "Acton State Historic Site": ["A statue of Elizabeth Crockett stands over her grave.", "20 minutes"],
+    "Revolver Brewing": ["Tours and tastings are offered on weekends.", "1–2 hours"],
+    "Granbury Ghosts & Legends Tour": ["Tours run on weekend evenings from the square.", "An evening"]
+  },
+  "kerrville": {
+    "Museum of Western Art": ["It was founded by the Cowboy Artists of America and shows work by living Western artists.", "1–2 hours"],
+    "Kerrville-Schreiner Park": ["Cabins and campsites make it a good base for exploring the area.", "Half day"],
+    "Kerrville River Trail": ["Louise Hays Park, along the trail, has a splash pad and river access.", "1–2 hours"],
+    "Coming King Sculpture Prayer Garden": ["The garden is open daily and is especially striking at night when the cross is lit.", "30 minutes"],
+    "Kerrville Folk Festival": ["Campfire song circles run late into the night.", "1–3 days"],
+    "Riverside Nature Center": ["The gardens show which native plants thrive in the Hill Country.", "1 hour"],
+    "Hill Country Arts Foundation": ["Summer shows at the outdoor theater are a local tradition.", "An evening"],
+    "Stonehenge II": ["Admission is free, and it makes a fun photo stop.", "20 minutes"],
+    "Schreiner Mansion": ["Charles Schreiner built a ranching and merchant business that shaped early Kerrville.", "45 minutes"],
+    "Lost Maples State Natural Area": ["The Maple Trail and East Trail lead into the canyons.", "Half day"]
   }
 };
