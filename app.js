@@ -16,6 +16,24 @@
   const googleMaps = (place, city) =>
     "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(`${place.name}, ${city.name}, TX`);
 
+  /* ---------- Photos (Wikimedia Commons, see data/photos.js) ---------- */
+
+  const PHOTOS = window.PHOTOS || {};
+  const cityPhoto = (city) => (PHOTOS[city.slug] || {}).city || null;
+  const placePhoto = (city, place) => ((PHOTOS[city.slug] || {}).places || {})[place.name] || null;
+  // Wikimedia serves standard thumbnail widths; swap the 960px URL for a smaller one where it fits.
+  const sized = (photo, w) => photo.src.replace(/\/960px-/, `/${w}px-`);
+
+  function img(photo, alt, w, cls) {
+    if (!photo) return `<div class="ph-empty ${cls || ""}" aria-hidden="true"></div>`;
+    return `<img class="${cls || ""}" src="${esc(sized(photo, w))}" alt="${esc(alt)}" width="${photo.w}" height="${photo.h}" loading="lazy" decoding="async" onload="this.classList.add('loaded')" />`;
+  }
+
+  function credit(photo) {
+    if (!photo) return "";
+    return `<span class="credit">Photo: ${esc(photo.credit)} · <a href="${esc(photo.page)}" target="_blank" rel="noopener">${esc(photo.license)}</a></span>`;
+  }
+
   const searchIcon =
     '<svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M6.5 1a5.5 5.5 0 0 1 4.38 8.83l3.65 3.64a.75.75 0 1 1-1.06 1.06l-3.64-3.65A5.5 5.5 0 1 1 6.5 1Zm0 1.5a4 4 0 1 0 0 8 4 4 0 0 0 0-8Z"/></svg>';
 
@@ -78,6 +96,7 @@
               (p, i) => `
             <li style="animation-delay:${120 + i * 55}ms">
               <span class="peek-n">${pad(i + 1)}</span>
+              ${img(placePhoto(city, p), "", 330, "peek-img")}
               <span class="peek-text"><strong>${esc(p.name)}</strong><span>${esc(p.category)} · ${esc(p.area)}</span></span>
             </li>`
             )
@@ -90,6 +109,7 @@
   function tile(city) {
     return `
       <a class="tile" href="#/city/${city.slug}">
+        <div class="tile-media">${img(cityPhoto(city), "", 500, "tile-img")}</div>
         <span class="region">${esc(city.region)}</span>
         <h3>${esc(city.name)}</h3>
         <div class="tile-swap">
@@ -236,6 +256,15 @@
         </div>
       </header>
 
+      ${
+        cityPhoto(city)
+          ? `<figure class="city-hero-photo container-wide">
+              <div class="hero-frame">${img(cityPhoto(city), city.name, 1280, "hero-img")}</div>
+              <figcaption>${credit(cityPhoto(city))}</figcaption>
+            </figure>`
+          : ""
+      }
+
       <div class="toolbar">
         <div class="container">
           <div class="segmented" role="group" aria-label="Filter by category">
@@ -277,6 +306,10 @@
                 <a class="more" href="${googleMaps(p, city)}" target="_blank" rel="noopener">Google Maps</a>
               </div>
             </div>
+            <figure class="entry-photo">
+              <div class="entry-frame">${img(placePhoto(city, p), p.name, 960, "entry-img")}</div>
+              <figcaption>${credit(placePhoto(city, p))}</figcaption>
+            </figure>
           </li>`
         )
         .join("");
@@ -333,6 +366,37 @@
       </article>`;
   }
 
+  function renderCredits() {
+    document.title = "Photo Credits — Texas Top 10";
+    setNav("");
+    const rows = cities
+      .map((c) => {
+        const items = [
+          cityPhoto(c) ? { label: c.name, photo: cityPhoto(c) } : null,
+          ...c.places.map((p) => (placePhoto(c, p) ? { label: p.name, photo: placePhoto(c, p) } : null)),
+        ].filter(Boolean);
+        if (!items.length) return "";
+        return `
+          <h2>${esc(c.name)}</h2>
+          <ul class="credit-list">
+            ${items
+              .map(
+                ({ label, photo }) => `
+              <li><span>${esc(label)}</span><span>${esc(photo.credit)} · <a href="${esc(photo.page)}" target="_blank" rel="noopener">${esc(photo.license)}</a></span></li>`
+              )
+              .join("")}
+          </ul>`;
+      })
+      .join("");
+    app.innerHTML = `
+      <article class="article article-wide">
+        <span class="eyebrow">Photo credits</span>
+        <h1 class="headline-md">Thank you to the photographers.</h1>
+        <p>Every photo on this site comes from Wikimedia Commons and is used under the license shown. Follow a license link to see the original image, its author and full terms.</p>
+        ${rows}
+      </article>`;
+  }
+
   function renderNotFound() {
     document.title = "Not Found — Texas Top 10";
     setNav("");
@@ -358,6 +422,7 @@
     if (section === "city" && slug) renderCity(slug);
     else if (section === "method") renderMethod();
     else if (section === "about") renderAbout();
+    else if (section === "credits") renderCredits();
     else renderHome();
 
     // Page transition

@@ -128,5 +128,131 @@ window.CITIES = [
       { name: "El Paso Holocaust Museum", category: "Museum", area: "Downtown", blurb: "A free museum devoted to Holocaust history and remembrance. Small, thoughtful and moving." },
       { name: "San Jacinto Plaza", category: "Outdoors", area: "Downtown", blurb: "The center of downtown since the 1880s. The alligator sculpture remembers the real alligators that lived in its pond for decades." }
     ]
+  },
+  {
+    slug: "corpus-christi",
+    lat: 27.8, lon: -97.4,
+    name: "Corpus Christi",
+    region: "Coastal Bend",
+    tagline: "A bayfront city on the doorstep of the wildest beach in Texas.",
+    intro:
+      "Corpus Christi is a working port with a beach town's pace. The bayfront seawall runs right through downtown, a World War II aircraft carrier sits across the harbor, and just south of the city begins Padre Island, the longest stretch of undeveloped barrier island in the world.",
+    places: [
+      { name: "Padre Island National Seashore", category: "Outdoors", area: "Padre Island", blurb: "About seventy miles of protected beach and dunes, with no hotels in sight. In summer, rangers release Kemp's ridley sea turtle hatchlings into the surf.", tip: "Past the first few miles of South Beach, you'll need a four-wheel-drive vehicle." },
+      { name: "USS Lexington Museum", category: "Museum", area: "North Beach", blurb: "The World War II carrier known as the Blue Ghost, now a floating museum with aircraft on the flight deck and five decks to explore." },
+      { name: "Texas State Aquarium", category: "Family", area: "North Beach", blurb: "Focused on the Gulf and the Caribbean, with dolphins, sharks and a wildlife rescue center that treats injured sea turtles and birds." },
+      { name: "Corpus Christi Bayfront", category: "Outdoors", area: "Downtown", blurb: "A seawall designed by Gutzon Borglum, the sculptor of Mount Rushmore, with wide stairs down to the water and a path along Shoreline Boulevard." },
+      { name: "Mustang Island State Park", category: "Outdoors", area: "Mustang Island", blurb: "Five miles of Gulf beach for swimming, camping and fishing, plus a paddling trail through the bay side." },
+      { name: "Art Museum of South Texas", category: "Museum", area: "Downtown", blurb: "A white Philip Johnson building on the water, with a later wing by Ricardo Legorreta and changing exhibitions inside." },
+      { name: "Selena Museum", category: "Museum", area: "Westside", blurb: "Run by the Quintanilla family at their recording studio, with the stage costumes and awards of the Queen of Tejano music.", tip: "Hours are limited. Check before you go." },
+      { name: "Corpus Christi Museum of Science and History", category: "Museum", area: "Downtown", blurb: "Its best gallery holds artifacts from Spanish ships wrecked off Padre Island in 1554." },
+      { name: "South Texas Botanical Gardens & Nature Center", category: "Outdoors", area: "Southside", blurb: "Orchid house, butterfly garden and boardwalk trails along a wetland that draws migrating birds in spring and fall." },
+      { name: "Whataburger by the Bay", category: "Food", area: "Downtown", blurb: "Whataburger started in Corpus Christi in 1950. The bayfront flagship is the place to order one where it all began." }
+    ]
+  },
+  {
+    slug: "galveston",
+    lat: 29.3, lon: -94.8, labelSide: "left",
+    name: "Galveston",
+    region: "Gulf Coast",
+    tagline: "Victorian mansions, a seawall built after the Great Storm and the Gulf.",
+    intro:
+      "Before the 1900 hurricane, Galveston was among the richest cities in Texas, and its Victorian streets still show it. The island rebuilt behind a seawall that now doubles as its main promenade. Spend the morning on the Strand and the afternoon on the beach.",
+    places: [
+      { name: "The Strand Historic District", category: "Neighborhood", area: "Downtown", blurb: "Iron-front Victorian buildings from the days when this street was the banking center of Texas, now full of shops, candy stores and cafés.", tip: "Dickens on the Strand fills the district with a Victorian holiday festival in early December." },
+      { name: "Bishop's Palace", category: "Landmark", area: "East End", blurb: "An 1890s stone mansion by architect Nicholas Clayton, ornate from the stained glass to the carved staircase. It came through the 1900 Storm intact." },
+      { name: "Galveston Seawall", category: "Landmark", area: "Seawall Boulevard", blurb: "Built after the 1900 Storm, the deadliest natural disaster in U.S. history. Ten miles long, with a sidewalk made for biking at sunrise." },
+      { name: "Texas Seaport Museum", category: "Museum", area: "Harborside", blurb: "Home of the Elissa, an 1877 iron barque that still sails, and a database of immigrants who arrived through the port." },
+      { name: "Moody Gardens", category: "Family", area: "West of Downtown", blurb: "Three glass pyramids holding a rainforest, an aquarium and a science center, with a beach and paddlewheel boat outside." },
+      { name: "Galveston Island Historic Pleasure Pier", category: "Family", area: "Seawall Boulevard", blurb: "A boardwalk-style amusement pier over the Gulf, with a roller coaster and rides that hang out above the waves." },
+      { name: "Galveston Island State Park", category: "Outdoors", area: "West End", blurb: "Beach on one side, bay marshes on the other, with kayak trails and some of the best birding on the coast." },
+      { name: "Moody Mansion", category: "Landmark", area: "Downtown", blurb: "A 1895 Romanesque mansion, home to one of Galveston's most powerful families, with original furnishings throughout." },
+      { name: "Ocean Star Offshore Drilling Rig & Museum", category: "Museum", area: "Harborside", blurb: "A retired drilling rig docked in the harbor, showing how offshore oil and gas production works, from the rig floor up." },
+      { name: "Gaido's", category: "Food", area: "Seawall Boulevard", blurb: "A family-run seafood restaurant on the seawall since 1911. Order the Gulf fish of the day." }
+    ]
+  },
+  {
+    slug: "fredericksburg",
+    lat: 30.27, lon: -98.87, labelSide: "left",
+    name: "Fredericksburg",
+    region: "Hill Country",
+    tagline: "German limestone, granite domes and wineries along Highway 290.",
+    intro:
+      "German settlers founded Fredericksburg in 1846, and their limestone houses still line the streets. Today it's the base for exploring the Hill Country: climb a granite dome in the morning, tour a presidential ranch after lunch, and end the day at a winery.",
+    places: [
+      { name: "Enchanted Rock State Natural Area", category: "Outdoors", area: "North of Town", blurb: "A pink granite dome rising about 425 feet over the Hill Country. The climb to the top takes about half an hour, and the view is worth it.", tip: "Day passes sell out, especially on weekends. Reserve ahead with Texas State Parks." },
+      { name: "National Museum of the Pacific War", category: "Museum", area: "Main Street", blurb: "In Admiral Chester Nimitz's hometown, a museum that covers the war in the Pacific in remarkable depth." },
+      { name: "Main Street", category: "Neighborhood", area: "Downtown", blurb: "Two-story limestone storefronts, biergartens and shops, stretching for blocks through the center of town." },
+      { name: "Lyndon B. Johnson National Historical Park", category: "Landmark", area: "Stonewall", blurb: "LBJ's ranch, the \"Texas White House,\" about fifteen miles east of town, with his airstrip, home and family cemetery.", tip: "Get the free driving permit at the visitor center in LBJ State Park." },
+      { name: "Luckenbach, Texas", category: "Music", area: "Southeast of Town", blurb: "A general store, a dance hall and live music under the oaks. The town Waylon Jennings and Willie Nelson sang about is still just that." },
+      { name: "Wildseed Farms", category: "Outdoors", area: "Highway 290", blurb: "Acres of wildflower fields east of town, with seeds to take home. Best in spring, when the bluebonnets and poppies bloom." },
+      { name: "Old Tunnel State Park", category: "Nature", area: "South of Town", blurb: "An abandoned railroad tunnel where up to three million bats spend the warm months, pouring out at dusk.", tip: "Bats are present roughly May through October. Lower-area viewing needs a reservation." },
+      { name: "Pioneer Museum", category: "Museum", area: "Main Street", blurb: "Original 19th-century homes, a smokehouse and a one-room school on the town's first settlement site." },
+      { name: "Marktplatz and Vereins Kirche", category: "Landmark", area: "Downtown", blurb: "The town square, anchored by a replica of the octagonal 1847 church that served as the community's first public building." },
+      { name: "Wine Road 290", category: "Food", area: "Highway 290", blurb: "Dozens of wineries and tasting rooms between Fredericksburg and Johnson City. Pick two or three and book a driver." }
+    ]
+  },
+  {
+    slug: "waco",
+    lat: 31.55, lon: -97.15,
+    name: "Waco",
+    region: "Central Texas",
+    tagline: "Mammoths, the birthplace of Dr Pepper and a bridge over the Brazos.",
+    intro:
+      "Waco sits on the Brazos halfway between Dallas and Austin, and it has more to show than most people expect. There are Ice Age fossils still in the ground where they were found, the town that invented Dr Pepper, and the official home of the Texas Rangers.",
+    places: [
+      { name: "Magnolia Market at the Silos", category: "Shopping", area: "Downtown", blurb: "Chip and Joanna Gaines turned a lot with two rusting grain silos into a market, bakery and lawn that draws visitors from around the country." },
+      { name: "Waco Mammoth National Monument", category: "Landmark", area: "North Waco", blurb: "A nursery herd of Columbian mammoths, still lying where they died tens of thousands of years ago, under a climate-controlled dig shelter.", tip: "The dig shelter is seen on guided tours that run through the day." },
+      { name: "Dr Pepper Museum", category: "Museum", area: "Downtown", blurb: "Dr Pepper was created in a Waco drugstore in 1885. The museum fills the 1906 bottling plant, with a soda fountain at the end." },
+      { name: "Texas Ranger Hall of Fame and Museum", category: "Museum", area: "Downtown", blurb: "The official museum of the Texas Rangers, with two centuries of history, weapons and stories from the state's oldest law enforcement agency." },
+      { name: "Waco Suspension Bridge", category: "Landmark", area: "Downtown", blurb: "Opened in 1870 for cattle drives crossing the Brazos. It's now a pedestrian bridge with longhorn statues at one end." },
+      { name: "Cameron Park", category: "Outdoors", area: "North Waco", blurb: "Over 400 acres of trails and limestone cliffs along the Brazos and Bosque rivers, right next to downtown." },
+      { name: "Cameron Park Zoo", category: "Family", area: "North Waco", blurb: "A natural-habitat zoo with a large Brazos River country exhibit. Small enough to see in a morning." },
+      { name: "Mayborn Museum", category: "Museum", area: "Baylor University", blurb: "Baylor's natural and cultural history museum, with a historic village and hands-on rooms that kids love." },
+      { name: "Armstrong Browning Library", category: "Landmark", area: "Baylor University", blurb: "The world's largest collection of Robert and Elizabeth Barrett Browning materials, in a building lined with stained glass windows." },
+      { name: "Hippodrome Theatre", category: "Music", area: "Downtown", blurb: "A restored 1914 theater showing films and hosting concerts, with dinner served in the seats." }
+    ]
+  },
+  {
+    slug: "lubbock",
+    lat: 33.58, lon: -101.86,
+    name: "Lubbock",
+    region: "South Plains",
+    tagline: "Buddy Holly, Texas Tech and twelve thousand years on the Llano Estacado.",
+    intro:
+      "Lubbock sits on the flat, open Llano Estacado, and its sky is part of the attraction. Buddy Holly grew up here, Texas Tech fills the town with energy, and the museums tell the story of the ranchers, windmills and early people who made the plains livable.",
+    places: [
+      { name: "Buddy Holly Center", category: "Museum", area: "Depot District", blurb: "Holly's guitars, his famous glasses and a gallery of West Texas music. Outside, a plaza with his statue honors the Walk of Fame." },
+      { name: "National Ranching Heritage Center", category: "Museum", area: "Texas Tech", blurb: "Dozens of original ranch buildings, from dugouts to a two-story stone house, moved here to show how ranching life changed over two centuries." },
+      { name: "Lubbock Lake Landmark", category: "Outdoors", area: "North Lubbock", blurb: "An archaeological preserve with evidence of about twelve thousand years of people living along a now-dry draw, with walking trails through the dig sites." },
+      { name: "American Windmill Museum", category: "Museum", area: "East Lubbock", blurb: "More than a hundred windmills, inside and out, telling the story of how wind pumps opened the plains to settlement." },
+      { name: "Museum of Texas Tech University", category: "Museum", area: "Texas Tech", blurb: "Art, natural history and a planetarium under one roof on the Texas Tech campus." },
+      { name: "Silent Wings Museum", category: "Museum", area: "North Lubbock", blurb: "Tells the little-known story of World War II glider pilots, many of whom trained near Lubbock." },
+      { name: "Cactus Theater", category: "Music", area: "Depot District", blurb: "A 1938 movie house restored as an intimate venue for country, rock and the occasional Buddy Holly tribute." },
+      { name: "Depot District", category: "Neighborhood", area: "Depot District", blurb: "Lubbock's night out, around the old rail depot: bars, music venues, a winery tasting room and a brewery." },
+      { name: "Prairie Dog Town", category: "Nature", area: "Mackenzie Park", blurb: "A free prairie dog colony in Mackenzie Park, protected since the 1930s." },
+      { name: "Llano Estacado Winery", category: "Food", area: "South Lubbock", blurb: "Opened in 1976, one of the oldest modern wineries in Texas, and proof that the High Plains grows serious grapes." }
+    ]
+  },
+  {
+    slug: "amarillo",
+    lat: 35.22, lon: -101.83,
+    name: "Amarillo",
+    region: "Panhandle",
+    tagline: "Route 66, buried Cadillacs and a canyon you don't see coming.",
+    intro:
+      "Amarillo grew up as a cattle and railroad town on the open Panhandle plains, and Route 66 made it a stop for travelers. The biggest surprise is just south of town, where the flat land drops away into Palo Duro Canyon.",
+    places: [
+      { name: "Palo Duro Canyon State Park", category: "Outdoors", area: "Canyon", blurb: "The second-largest canyon in the country, about thirty minutes south. Red and yellow rock walls, hoodoos and miles of trails.", tip: "Summer afternoons are very hot on the trail. Start early and carry plenty of water." },
+      { name: "Cadillac Ranch", category: "Quirky", area: "West of Amarillo", blurb: "Ten Cadillacs buried nose-down in a wheat field in 1974, covered in layers of spray paint from passing visitors." },
+      { name: "Panhandle-Plains Historical Museum", category: "Museum", area: "Canyon", blurb: "The largest history museum in Texas, on the West Texas A&M campus, covering dinosaurs, oil, art and pioneer life." },
+      { name: "Route 66 Historic District", category: "Neighborhood", area: "Sixth Avenue", blurb: "The stretch of Sixth Avenue that carried Route 66 through town, now lined with antique shops, bars and restaurants." },
+      { name: "Big Texan Steak Ranch", category: "Food", area: "Interstate 40", blurb: "Home of the 72-ounce steak challenge since 1960. Finish it, with all the sides, in an hour and the meal is free." },
+      { name: "American Quarter Horse Hall of Fame & Museum", category: "Museum", area: "Interstate 40", blurb: "The story of the American Quarter Horse, from ranch work to racing, at the breed's national headquarters." },
+      { name: "TEXAS Outdoor Musical", category: "Music", area: "Palo Duro Canyon", blurb: "A summer musical about Panhandle history, staged in an amphitheater against the canyon walls." },
+      { name: "Amarillo Botanical Gardens", category: "Outdoors", area: "Medical Center", blurb: "Gardens designed for the High Plains, with a tropical conservatory for cold days." },
+      { name: "Don Harrington Discovery Center", category: "Family", area: "Medical Center", blurb: "A hands-on science center with a planetarium. Outside stands the Helium Monument, a nod to Amarillo's history as the Helium Capital of the World." },
+      { name: "Wonderland Park", category: "Family", area: "North Amarillo", blurb: "A family-owned amusement park open since 1951, known for the Texas Tornado, a double-loop roller coaster." }
+    ]
   }
 ];

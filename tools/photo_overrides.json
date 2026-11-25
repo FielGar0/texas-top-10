@@ -1,0 +1,371 @@
+{
+ "austin/Barton Springs Pool": {
+  "article": "Barton Springs Pool"
+ },
+ "austin/Texas State Capitol": {
+  "article": "Texas State Capitol"
+ },
+ "austin/Franklin Barbecue": {
+  "article": "Franklin Barbecue"
+ },
+ "austin/Lady Bird Lake Trail": {
+  "article": "Lady Bird Lake"
+ },
+ "austin/Congress Avenue Bridge Bats": {
+  "article": "Ann W. Richards Congress Avenue Bridge"
+ },
+ "austin/South Congress Avenue": {
+  "article": "South Congress"
+ },
+ "austin/Zilker Park": {
+  "article": "Zilker Park"
+ },
+ "austin/Mount Bonnell": {
+  "article": "Mount Bonnell"
+ },
+ "austin/Blanton Museum of Art": {
+  "article": "Blanton Museum of Art"
+ },
+ "austin/The Continental Club": {
+  "article": "Continental Club (Austin, Texas)"
+ },
+ "san-antonio/The Alamo": {
+  "article": "Alamo Mission in San Antonio"
+ },
+ "san-antonio/Mission San José": {
+  "article": "Mission San José (Texas)"
+ },
+ "san-antonio/San Antonio River Walk": {
+  "article": "San Antonio River Walk"
+ },
+ "san-antonio/The Pearl": {
+  "article": "Pearl Brewery"
+ },
+ "san-antonio/Historic Market Square": {
+  "article": "Market Square (San Antonio)"
+ },
+ "san-antonio/San Antonio Museum of Art": {
+  "article": "San Antonio Museum of Art"
+ },
+ "san-antonio/Japanese Tea Garden": {
+  "article": "Japanese Tea Garden (San Antonio)"
+ },
+ "san-antonio/McNay Art Museum": {
+  "article": "McNay Art Museum"
+ },
+ "san-antonio/King William Historic District": {
+  "article": "King William Historic District"
+ },
+ "san-antonio/Tower of the Americas": {
+  "article": "Tower of the Americas"
+ },
+ "houston/Space Center Houston": {
+  "article": "Space Center Houston"
+ },
+ "houston/The Menil Collection": {
+  "article": "Menil Collection"
+ },
+ "houston/Rothko Chapel": {
+  "article": "Rothko Chapel"
+ },
+ "houston/Museum of Fine Arts, Houston": {
+  "article": "Museum of Fine Arts, Houston"
+ },
+ "houston/Buffalo Bayou Park": {
+  "article": "Buffalo Bayou Park"
+ },
+ "houston/Houston Museum of Natural Science": {
+  "article": "Houston Museum of Natural Science"
+ },
+ "houston/Hermann Park": {
+  "article": "Hermann Park"
+ },
+ "houston/Houston Zoo": {
+  "article": "Houston Zoo"
+ },
+ "houston/Discovery Green": {
+  "article": "Discovery Green"
+ },
+ "houston/Beer Can House": {
+  "article": "Beer Can House"
+ },
+ "dallas/The Sixth Floor Museum at Dealey Plaza": {
+  "article": "Sixth Floor Museum"
+ },
+ "dallas/Dallas Arboretum and Botanical Garden": {
+  "article": "Dallas Arboretum and Botanical Garden"
+ },
+ "dallas/Dallas Museum of Art": {
+  "skip": true,
+  "why": "lead image is a logo"
+ },
+ "dallas/Nasher Sculpture Center": {
+  "article": "Nasher Sculpture Center"
+ },
+ "dallas/Klyde Warren Park": {
+  "article": "Klyde Warren Park"
+ },
+ "dallas/Deep Ellum": {
+  "article": "Deep Ellum"
+ },
+ "dallas/Bishop Arts District": {
+  "article": "Bishop Arts District"
+ },
+ "dallas/Perot Museum of Nature and Science": {
+  "article": "Perot Museum of Nature and Science"
+ },
+ "dallas/White Rock Lake": {
+  "skip": true,
+  "why": "lead image is a 1940 archival photo"
+ },
+ "dallas/Reunion Tower": {
+  "article": "Reunion Tower"
+ },
+ "fort-worth/Kimbell Art Museum": {
+  "article": "Kimbell Art Museum"
+ },
+ "fort-worth/Fort Worth Stockyards": {
+  "article": "Fort Worth Stockyards"
+ },
+ "fort-worth/Modern Art Museum of Fort Worth": {
+  "article": "Modern Art Museum of Fort Worth"
+ },
+ "fort-worth/Amon Carter Museum of American Art": {
+  "skip": true,
+  "why": "lead image is a logo"
+ },
+ "fort-worth/Fort Worth Water Gardens": {
+  "article": "Fort Worth Water Gardens"
+ },
+ "fort-worth/Fort Worth Botanic Garden": {
+  "article": "Fort Worth Botanic Garden"
+ },
+ "fort-worth/Billy Bob's Texas": {
+  "article": "Billy Bob's"
+ },
+ "fort-worth/National Cowgirl Museum and Hall of Fame": {
+  "article": "National Cowgirl Museum and Hall of Fame"
+ },
+ "fort-worth/Sundance Square": {
+  "article": "Sundance Square"
+ },
+ "fort-worth/Fort Worth Zoo": {
+  "article": "Fort Worth Zoo"
+ },
+ "el-paso/Franklin Mountains State Park": {
+  "article": "Franklin Mountains State Park"
+ },
+ "el-paso/Scenic Drive Overlook": {
+  "skip": true,
+  "why": "same photo as Franklin Mountains"
+ },
+ "el-paso/Hueco Tanks State Park & Historic Site": {
+  "article": "Hueco Tanks"
+ },
+ "el-paso/Mission Trail": {
+  "article": "Ysleta Mission"
+ },
+ "el-paso/Chamizal National Memorial": {
+  "article": "Chamizal National Memorial"
+ },
+ "el-paso/L&J Cafe": {
+  "skip": true
+ },
+ "el-paso/El Paso Museum of Art": {
+  "article": "El Paso Museum of Art"
+ },
+ "el-paso/Plaza Theatre": {
+  "article": "Plaza Theatre (El Paso, Texas)"
+ },
+ "el-paso/El Paso Holocaust Museum": {
+  "article": "El Paso Holocaust Museum and Study Center"
+ },
+ "el-paso/San Jacinto Plaza": {
+  "article": "San Jacinto Plaza"
+ },
+ "corpus-christi/Padre Island National Seashore": {
+  "article": "Padre Island National Seashore"
+ },
+ "corpus-christi/USS Lexington Museum": {
+  "article": "USS Lexington (CV-16)"
+ },
+ "corpus-christi/Texas State Aquarium": {
+  "article": "Texas State Aquarium"
+ },
+ "corpus-christi/Corpus Christi Bayfront": {
+  "article": "Corpus Christi Bay"
+ },
+ "corpus-christi/Mustang Island State Park": {
+  "article": "Mustang Island"
+ },
+ "corpus-christi/Art Museum of South Texas": {
+  "article": "Art Museum of South Texas"
+ },
+ "corpus-christi/Selena Museum": {
+  "skip": true
+ },
+ "corpus-christi/Corpus Christi Museum of Science and History": {
+  "article": "Corpus Christi Museum of Science and History"
+ },
+ "corpus-christi/South Texas Botanical Gardens & Nature Center": {
+  "skip": true
+ },
+ "corpus-christi/Whataburger by the Bay": {
+  "skip": true
+ },
+ "galveston/The Strand Historic District": {
+  "article": "Strand Historic District"
+ },
+ "galveston/Bishop's Palace": {
+  "article": "Bishop's Palace (Galveston, Texas)"
+ },
+ "galveston/Galveston Seawall": {
+  "article": "Galveston Seawall"
+ },
+ "galveston/Texas Seaport Museum": {
+  "article": "Elissa (ship)"
+ },
+ "galveston/Moody Gardens": {
+  "skip": true,
+  "why": "lead image is a single flower"
+ },
+ "galveston/Galveston Island Historic Pleasure Pier": {
+  "article": "Galveston Island Historic Pleasure Pier"
+ },
+ "galveston/Galveston Island State Park": {
+  "article": "Galveston Island State Park"
+ },
+ "galveston/Moody Mansion": {
+  "article": "Moody Mansion"
+ },
+ "galveston/Ocean Star Offshore Drilling Rig & Museum": {
+  "article": "Ocean Star Offshore Drilling Rig and Museum"
+ },
+ "galveston/Gaido's": {
+  "skip": true
+ },
+ "fredericksburg/Enchanted Rock State Natural Area": {
+  "article": "Enchanted Rock"
+ },
+ "fredericksburg/National Museum of the Pacific War": {
+  "article": "National Museum of the Pacific War"
+ },
+ "fredericksburg/Main Street": {
+  "article": "Fredericksburg Historic District"
+ },
+ "fredericksburg/Lyndon B. Johnson National Historical Park": {
+  "article": "Lyndon B. Johnson National Historical Park"
+ },
+ "fredericksburg/Luckenbach, Texas": {
+  "article": "Luckenbach, Texas"
+ },
+ "fredericksburg/Wildseed Farms": {
+  "skip": true
+ },
+ "fredericksburg/Old Tunnel State Park": {
+  "article": "Old Tunnel State Park"
+ },
+ "fredericksburg/Pioneer Museum": {
+  "article": "Pioneer Museum (Fredericksburg, Texas)"
+ },
+ "fredericksburg/Marktplatz and Vereins Kirche": {
+  "article": "Vereins Kirche"
+ },
+ "fredericksburg/Wine Road 290": {
+  "skip": true,
+  "why": "lead image is a map"
+ },
+ "waco/Magnolia Market at the Silos": {
+  "article": "Magnolia Market"
+ },
+ "waco/Waco Mammoth National Monument": {
+  "article": "Waco Mammoth National Monument"
+ },
+ "waco/Dr Pepper Museum": {
+  "skip": true,
+  "why": "lead image is a soda can"
+ },
+ "waco/Texas Ranger Hall of Fame and Museum": {
+  "article": "Texas Ranger Hall of Fame and Museum"
+ },
+ "waco/Waco Suspension Bridge": {
+  "article": "Waco Suspension Bridge"
+ },
+ "waco/Cameron Park": {
+  "article": "Cameron Park (Waco, Texas)"
+ },
+ "waco/Cameron Park Zoo": {
+  "article": "Cameron Park Zoo"
+ },
+ "waco/Mayborn Museum": {
+  "article": "Mayborn Museum Complex"
+ },
+ "waco/Armstrong Browning Library": {
+  "article": "Armstrong Browning Library"
+ },
+ "waco/Hippodrome Theatre": {
+  "article": "Hippodrome Theatre (Waco, Texas)"
+ },
+ "lubbock/Buddy Holly Center": {
+  "article": "Buddy Holly Center"
+ },
+ "lubbock/National Ranching Heritage Center": {
+  "article": "National Ranching Heritage Center"
+ },
+ "lubbock/Lubbock Lake Landmark": {
+  "article": "Lubbock Lake Landmark"
+ },
+ "lubbock/American Windmill Museum": {
+  "article": "American Windmill Museum"
+ },
+ "lubbock/Museum of Texas Tech University": {
+  "article": "Museum of Texas Tech University"
+ },
+ "lubbock/Silent Wings Museum": {
+  "article": "Silent Wings Museum"
+ },
+ "lubbock/Cactus Theater": {
+  "article": "Cactus Theater"
+ },
+ "lubbock/Depot District": {
+  "article": "Depot District (Lubbock, Texas)"
+ },
+ "lubbock/Prairie Dog Town": {
+  "skip": true,
+  "why": "lead image is the city skyline"
+ },
+ "lubbock/Llano Estacado Winery": {
+  "article": "Llano Estacado Winery"
+ },
+ "amarillo/Palo Duro Canyon State Park": {
+  "article": "Palo Duro Canyon"
+ },
+ "amarillo/Cadillac Ranch": {
+  "article": "Cadillac Ranch"
+ },
+ "amarillo/Panhandle-Plains Historical Museum": {
+  "article": "Panhandle–Plains Historical Museum"
+ },
+ "amarillo/Route 66 Historic District": {
+  "skip": true,
+  "why": "lead image is a highway shield"
+ },
+ "amarillo/Big Texan Steak Ranch": {
+  "article": "Big Texan Steak Ranch"
+ },
+ "amarillo/American Quarter Horse Hall of Fame & Museum": {
+  "article": "American Quarter Horse Hall of Fame"
+ },
+ "amarillo/TEXAS Outdoor Musical": {
+  "article": "Texas (musical)"
+ },
+ "amarillo/Amarillo Botanical Gardens": {
+  "article": "Amarillo Botanical Gardens"
+ },
+ "amarillo/Don Harrington Discovery Center": {
+  "article": "Don Harrington Discovery Center"
+ },
+ "amarillo/Wonderland Park": {
+  "article": "Wonderland Park (Texas)"
+ }
+}
