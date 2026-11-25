@@ -1,119 +1,125 @@
 // City data for Texas Top 10.
-// Each city: slug (used in the URL), name, region, tagline, two gradient colors, and a ranked list of 10 places.
-// Each place: name, category, area (neighborhood or district), blurb.
+// City: slug (URL), name, region, tagline (one line for the city tile), intro (opening paragraph), places (ranked).
+// Place: name, category, area, blurb, optional tip (a practical "good to know" note).
 window.CITIES = [
   {
     slug: "austin",
     name: "Austin",
-    region: "Central Texas · Hill Country",
-    tagline: "Live music, spring-fed swimming and brisket worth the line.",
-    colors: ["#bf5700", "#13294b"],
+    region: "Central Texas",
+    tagline: "Cold springs, a pink granite Capitol and brisket at dawn.",
+    intro:
+      "Austin rewards people who pick a lane. Come for the swimming holes, the barbecue or the live music, and let the rest of the city fill in around it. Most of this list sits within a few miles of Lady Bird Lake, so a bike or a good pair of shoes covers a lot of it.",
     places: [
-      { name: "Barton Springs Pool", category: "Outdoors", area: "Zilker", blurb: "A three-acre, spring-fed pool that stays around 68 degrees all year. The classic Austin cool-off on a summer afternoon." },
-      { name: "Texas State Capitol", category: "Landmark", area: "Downtown", blurb: "Built from pink Texas granite and taller than the U.S. Capitol. Free guided tours run most days." },
-      { name: "Franklin Barbecue", category: "Food", area: "East Austin", blurb: "Famous brisket and an even more famous line. Bring a chair and plan to get there early." },
-      { name: "Lady Bird Lake Hike-and-Bike Trail", category: "Outdoors", area: "Downtown", blurb: "About ten miles of trail looping the lake through the middle of the city, with skyline views the whole way." },
-      { name: "Congress Avenue Bridge Bats", category: "Nature", area: "Downtown", blurb: "From roughly spring through fall, a huge colony of Mexican free-tailed bats pours out from under the bridge at dusk." },
-      { name: "South Congress Avenue", category: "Neighborhood", area: "SoCo", blurb: "Boutiques, vintage shops, food trucks and murals, with a straight-on view of the Capitol." },
-      { name: "Zilker Park", category: "Outdoors", area: "Zilker", blurb: "Austin's big front yard: botanical garden, kayak rentals, and home of Austin City Limits Music Festival." },
-      { name: "Mount Bonnell", category: "Outdoors", area: "West Austin", blurb: "A short climb up to one of the best sunset views of the Colorado River and the hills west of town." },
-      { name: "Blanton Museum of Art", category: "Museum", area: "UT Campus", blurb: "The University of Texas art museum, home to Ellsworth Kelly's light-filled chapel-like building, \"Austin.\"" },
-      { name: "The Continental Club", category: "Music", area: "SoCo", blurb: "A South Congress institution for live music since the 1950s. Small room, big talent." }
+      { name: "Barton Springs Pool", category: "Outdoors", area: "Zilker", blurb: "A spring-fed pool three acres long that holds at about 68 degrees year-round. On a July afternoon, nothing else in town comes close.", tip: "Bring cash or a card for the entry fee, and arrive early on summer weekends." },
+      { name: "Texas State Capitol", category: "Landmark", area: "Downtown", blurb: "Built in the 1880s from pink granite quarried in the Hill Country, and a few feet taller than the U.S. Capitol. The rotunda alone is worth the walk up Congress Avenue.", tip: "Free guided tours start inside the south entrance." },
+      { name: "Franklin Barbecue", category: "Food", area: "East Austin", blurb: "The brisket that set the standard for a generation of Texas pitmasters. The line is part of the experience, and the regulars treat it like a tailgate." },
+      { name: "Lady Bird Lake Trail", category: "Outdoors", area: "Downtown", blurb: "A ten-mile loop around the river through the middle of the city. Run it, bike it, or rent a paddleboard and see the skyline from the water." },
+      { name: "Congress Avenue Bridge Bats", category: "Nature", area: "Downtown", blurb: "Every warm-weather evening, a colony of Mexican free-tailed bats leaves from under the bridge in a long dark ribbon. It's one of the largest urban bat colonies in North America.", tip: "Best from late spring through early fall. Watch from the east side of the bridge around sunset." },
+      { name: "South Congress Avenue", category: "Neighborhood", area: "SoCo", blurb: "Boot shops, vintage stores and patios, with the Capitol framed at the north end of the street. Go in the late afternoon and stay for dinner." },
+      { name: "Zilker Park", category: "Outdoors", area: "Zilker", blurb: "Three hundred-plus acres next to Barton Springs, with a botanical garden, canoe rentals and the lawn that hosts Austin City Limits Music Festival each fall." },
+      { name: "Mount Bonnell", category: "Outdoors", area: "West Austin", blurb: "A short, steep climb to a lookout over Lake Austin and the hills to the west. Locals have been watching the sunset from here since the 1800s." },
+      { name: "Blanton Museum of Art", category: "Museum", area: "UT Campus", blurb: "The University of Texas art museum, best known for Austin, Ellsworth Kelly's chapel-like building of colored glass and black-and-white marble panels." },
+      { name: "The Continental Club", category: "Music", area: "SoCo", blurb: "Open since 1955 and still one of the best small rooms in a city full of them. Check the calendar for the weekly residencies." }
     ]
   },
   {
     slug: "san-antonio",
     name: "San Antonio",
-    region: "South Central Texas",
-    tagline: "Three hundred years of history along a river lined with cypress.",
-    colors: ["#0e6e5c", "#c2410c"],
+    region: "South Texas",
+    tagline: "Spanish missions, a river below the street and Saturday at the Pearl.",
+    intro:
+      "San Antonio is older than the United States, and it shows in the best way. Five Spanish colonial missions, including the Alamo, run along the river south of downtown. Pair a morning of history with an afternoon on the River Walk and dinner at the Pearl.",
     places: [
-      { name: "The Alamo", category: "Landmark", area: "Downtown", blurb: "The most famous mission in Texas and the heart of the state's story. Reserve a free entry time ahead." },
-      { name: "San Antonio River Walk", category: "Neighborhood", area: "Downtown", blurb: "Miles of stone paths a story below street level, lined with restaurants, river barges and bridges." },
-      { name: "Mission San José", category: "Landmark", area: "Mission Trail", blurb: "The \"Queen of the Missions,\" part of the San Antonio Missions UNESCO World Heritage Site." },
-      { name: "The Pearl", category: "Neighborhood", area: "Pearl District", blurb: "A former brewery turned food and shopping district, with a weekend farmers market and riverside restaurants." },
-      { name: "Historic Market Square", category: "Shopping", area: "Downtown", blurb: "The largest Mexican market in the U.S., full of crafts, music and pan dulce." },
-      { name: "San Antonio Museum of Art", category: "Museum", area: "Museum Reach", blurb: "Housed in the old Lone Star Brewery, known for its Latin American and ancient Mediterranean collections." },
-      { name: "Japanese Tea Garden", category: "Outdoors", area: "Brackenridge Park", blurb: "A peaceful garden built into an old rock quarry, with koi ponds, stone bridges and a waterfall." },
-      { name: "McNay Art Museum", category: "Museum", area: "Alamo Heights", blurb: "Texas's first modern art museum, in a Spanish Colonial Revival mansion with beautiful grounds." },
-      { name: "Tower of the Americas", category: "Landmark", area: "Hemisfair", blurb: "Built for the 1968 World's Fair. Ride up for a 360-degree view of the city." },
-      { name: "King William Historic District", category: "Neighborhood", area: "Southtown", blurb: "Grand 19th-century homes on shady streets, an easy walk from the River Walk." }
+      { name: "The Alamo", category: "Landmark", area: "Downtown", blurb: "The 1718 mission and the site of the 1836 battle that became the rallying cry of the Texas Revolution. Smaller than most people expect, and more moving.", tip: "Entry to the church is free, but you reserve a timed ticket online." },
+      { name: "Mission San José", category: "Landmark", area: "Mission Trail", blurb: "The largest of the city's missions, restored with its walls, granary and carved stone window intact. Part of a UNESCO World Heritage Site since 2015.", tip: "The Mission Reach hike-and-bike trail links all four southern missions along the river." },
+      { name: "San Antonio River Walk", category: "Neighborhood", area: "Downtown", blurb: "Stone paths a story below street level, shaded by cypress trees. The downtown stretch is busy; walk north toward the Museum Reach for a quieter version." },
+      { name: "The Pearl", category: "Neighborhood", area: "Pearl District", blurb: "The old Pearl Brewery, now home to some of the city's best restaurants, a culinary school and Hotel Emma. Weekend mornings bring a farmers market." },
+      { name: "Historic Market Square", category: "Shopping", area: "Downtown", blurb: "Three blocks of Mexican crafts, music and bakeries, a few minutes' walk west of the river. Mi Tierra, open around the clock, anchors one corner." },
+      { name: "San Antonio Museum of Art", category: "Museum", area: "Museum Reach", blurb: "Inside the old Lone Star Brewery, with a deep Latin American collection and one of the largest collections of ancient Mediterranean art in the South." },
+      { name: "Japanese Tea Garden", category: "Outdoors", area: "Brackenridge Park", blurb: "A former rock quarry turned sunken garden, with a waterfall, stone footbridges and koi ponds. Free, and best in the soft light of morning." },
+      { name: "McNay Art Museum", category: "Museum", area: "Alamo Heights", blurb: "The first modern art museum in Texas, set in Marion Koogler McNay's 1920s Spanish Colonial Revival home and gardens." },
+      { name: "King William Historic District", category: "Neighborhood", area: "Southtown", blurb: "Victorian and Greek Revival mansions built by the city's 19th-century German merchants, along quiet streets just off the river." },
+      { name: "Tower of the Americas", category: "Landmark", area: "Hemisfair", blurb: "Built for the 1968 World's Fair. The observation deck, 750 feet up, gives the clearest sense of how the city spreads out across the plain." }
     ]
   },
   {
     slug: "houston",
     name: "Houston",
     region: "Gulf Coast",
-    tagline: "Space flight, world-class museums and the most diverse food scene in Texas.",
-    colors: ["#1e3a8a", "#0891b2"],
+    tagline: "Mission control, a museum district and the best eating in the state.",
+    intro:
+      "Houston doesn't arrange itself for visitors, which is part of its charm. The city is huge, flat and spread out, but its best things cluster: a Museum District within walking distance of Hermann Park, a quiet campus of art in Montrose, and NASA's home base down near the bay.",
     places: [
-      { name: "Space Center Houston", category: "Museum", area: "Clear Lake", blurb: "The visitor center for NASA Johnson Space Center, with real spacecraft and tram tours of mission control." },
-      { name: "Museum of Fine Arts, Houston", category: "Museum", area: "Museum District", blurb: "One of the largest art museums in the country, spread across several buildings and a sculpture garden." },
-      { name: "The Menil Collection", category: "Museum", area: "Montrose", blurb: "A free museum in a calm, light-filled building, set in a neighborhood of gray bungalows and green lawns." },
-      { name: "Rothko Chapel", category: "Landmark", area: "Montrose", blurb: "An octagonal, meditative space holding fourteen large Mark Rothko paintings. Quiet and unforgettable." },
-      { name: "Buffalo Bayou Park", category: "Outdoors", area: "Downtown / Memorial", blurb: "Trails, kayaking and skyline views along the bayou, plus a historic underground cistern you can tour." },
-      { name: "Houston Museum of Natural Science", category: "Museum", area: "Museum District", blurb: "Dinosaur halls, a gem and mineral collection, a planetarium and a butterfly center under one roof." },
-      { name: "Hermann Park", category: "Outdoors", area: "Museum District", blurb: "A huge urban park with a Japanese garden, paddle boats, a miniature train and an outdoor theater." },
-      { name: "Houston Zoo", category: "Family", area: "Hermann Park", blurb: "A large, well-shaded zoo inside Hermann Park with thousands of animals." },
-      { name: "Discovery Green", category: "Outdoors", area: "Downtown", blurb: "A downtown park with a lake, playgrounds, free concerts and seasonal events." },
-      { name: "Beer Can House", category: "Quirky", area: "Rice Military", blurb: "A house covered in thousands of flattened beer cans. Pure Houston folk art." }
+      { name: "Space Center Houston", category: "Museum", area: "Clear Lake", blurb: "The visitor center for NASA's Johnson Space Center. See a Saturn V rocket laid out on its side and take the tram to the historic Mission Control.", tip: "Plan a full day, and book the tram tour as soon as you arrive." },
+      { name: "The Menil Collection", category: "Museum", area: "Montrose", blurb: "John and Dominique de Menil's collection in a calm, gray building by Renzo Piano, surrounded by bungalows and shaded lawns. Admission is free." },
+      { name: "Rothko Chapel", category: "Landmark", area: "Montrose", blurb: "An octagonal room holding fourteen dark canvases by Mark Rothko. Sit for ten minutes and the paintings start to change." },
+      { name: "Museum of Fine Arts, Houston", category: "Museum", area: "Museum District", blurb: "One of the largest art museums in the country, spread over three gallery buildings and a sculpture garden by Isamu Noguchi." },
+      { name: "Buffalo Bayou Park", category: "Outdoors", area: "Downtown", blurb: "Trails, kayaking and skyline views along the bayou west of downtown. Underground, a 1920s drinking-water reservoir is open for tours.", tip: "Cistern tours are short and sell out. Reserve ahead." },
+      { name: "Houston Museum of Natural Science", category: "Museum", area: "Museum District", blurb: "A dinosaur hall that rivals any in the country, a gem vault, a planetarium and a three-story butterfly rainforest." },
+      { name: "Hermann Park", category: "Outdoors", area: "Museum District", blurb: "Paddle boats, a Japanese garden, a miniature train and free summer shows at Miller Outdoor Theatre, all next to the museums." },
+      { name: "Houston Zoo", category: "Family", area: "Hermann Park", blurb: "Thousands of animals on a well-shaded campus inside Hermann Park. Easy to pair with a museum morning." },
+      { name: "Discovery Green", category: "Outdoors", area: "Downtown", blurb: "Twelve acres between the convention center and the skyscrapers, with a small lake, concerts and an ice rink in winter." },
+      { name: "Beer Can House", category: "Quirky", area: "Rice Military", blurb: "A retired upholsterer spent nearly two decades covering his house in flattened beer cans. It's Houston folk art at its most cheerful." }
     ]
   },
   {
     slug: "dallas",
     name: "Dallas",
     region: "North Texas",
-    tagline: "Big-city art, history that changed the country and a lake for every weekend.",
-    colors: ["#0f172a", "#2563eb"],
+    tagline: "A downtown arts district, Dealey Plaza and a lake for sunset.",
+    intro:
+      "Dallas packs its essentials into a small area. The Arts District, Klyde Warren Park and Dealey Plaza are all within a short walk of each other downtown. Save an evening for Deep Ellum or Bishop Arts, and a morning for the gardens on White Rock Lake.",
     places: [
-      { name: "The Sixth Floor Museum at Dealey Plaza", category: "Museum", area: "Downtown / West End", blurb: "Tells the story of President Kennedy's life and assassination from the former Texas School Book Depository." },
-      { name: "Dallas Arboretum and Botanical Garden", category: "Outdoors", area: "White Rock Lake", blurb: "Sixty-six acres of gardens on the lake, famous for its spring tulips and fall pumpkin village." },
-      { name: "Klyde Warren Park", category: "Outdoors", area: "Arts District", blurb: "A park built over a freeway, with food trucks, lawn games and free events." },
-      { name: "Dallas Museum of Art", category: "Museum", area: "Arts District", blurb: "A huge, free general collection spanning thousands of years, in the largest arts district in the country." },
-      { name: "Perot Museum of Nature and Science", category: "Family", area: "Victory Park", blurb: "Hands-on science across five floors, inside a striking cube-shaped building." },
-      { name: "Deep Ellum", category: "Neighborhood", area: "Deep Ellum", blurb: "Dallas's historic music and arts district, with murals, bars and live shows most nights." },
-      { name: "Bishop Arts District", category: "Neighborhood", area: "Oak Cliff", blurb: "Walkable blocks of independent shops, galleries and restaurants in Oak Cliff." },
-      { name: "Reunion Tower", category: "Landmark", area: "Downtown", blurb: "The lit-up ball on the skyline, with an observation deck and sweeping views of the city." },
-      { name: "White Rock Lake", category: "Outdoors", area: "East Dallas", blurb: "A nine-mile loop for biking, running and sunset paddling." },
-      { name: "Nasher Sculpture Center", category: "Museum", area: "Arts District", blurb: "Modern and contemporary sculpture inside and out, with a quiet garden in the middle of downtown." }
+      { name: "The Sixth Floor Museum at Dealey Plaza", category: "Museum", area: "West End", blurb: "In the former Texas School Book Depository, the museum walks through President Kennedy's life, death and legacy. The window corner is preserved as it was in 1963.", tip: "Book a timed ticket online. Allow about two hours." },
+      { name: "Dallas Arboretum and Botanical Garden", category: "Outdoors", area: "White Rock Lake", blurb: "Sixty-six acres of gardens on the east shore of White Rock Lake. Spring brings hundreds of thousands of tulips; fall brings a famous pumpkin village." },
+      { name: "Dallas Museum of Art", category: "Museum", area: "Arts District", blurb: "A broad collection spanning roughly five thousand years, with free general admission, at the heart of one of the largest arts districts in the country." },
+      { name: "Nasher Sculpture Center", category: "Museum", area: "Arts District", blurb: "A Renzo Piano building and walled garden filled with modern sculpture, from Rodin to Richard Serra. One of the calmest places downtown." },
+      { name: "Klyde Warren Park", category: "Outdoors", area: "Arts District", blurb: "A five-acre park built on a deck over a freeway, joining downtown to Uptown. Food trucks line the edge at lunch." },
+      { name: "Deep Ellum", category: "Neighborhood", area: "East of Downtown", blurb: "Blues players like Blind Lemon Jefferson worked these streets in the 1920s. Today it's murals, music venues and late nights." },
+      { name: "Bishop Arts District", category: "Neighborhood", area: "Oak Cliff", blurb: "A few walkable blocks of independent shops, galleries and some of the city's best restaurants, across the river in Oak Cliff." },
+      { name: "Perot Museum of Nature and Science", category: "Family", area: "Victory Park", blurb: "Five floors of hands-on science inside a stone-clad cube, with an outdoor escalator that gives a view of downtown on the way up." },
+      { name: "White Rock Lake", category: "Outdoors", area: "East Dallas", blurb: "A nine-mile loop around the water for running, cycling and sunset-watching, minutes from downtown." },
+      { name: "Reunion Tower", category: "Landmark", area: "Downtown", blurb: "The lit-up sphere on the skyline. Ride up for a 360-degree view that makes the city's layout make sense." }
     ]
   },
   {
     slug: "fort-worth",
     name: "Fort Worth",
     region: "North Texas",
-    tagline: "Where the West begins, with a world-class art scene down the road.",
-    colors: ["#7c2d12", "#a16207"],
+    tagline: "Longhorns on Exchange Avenue and three great museums.",
+    intro:
+      "Fort Worth leans into its cattle-town past without being stuck in it. In the morning, see some of the finest museum architecture in the country in the Cultural District. In the afternoon, watch longhorns walk down the street in the Stockyards.",
     places: [
-      { name: "Fort Worth Stockyards", category: "Landmark", area: "Stockyards", blurb: "Twice-daily cattle drives down Exchange Avenue, rodeos, honky-tonks and western wear." },
-      { name: "Kimbell Art Museum", category: "Museum", area: "Cultural District", blurb: "A small, superb collection in a Louis Kahn building often called one of the most beautiful museums anywhere." },
-      { name: "Modern Art Museum of Fort Worth", category: "Museum", area: "Cultural District", blurb: "Postwar art in a concrete-and-glass building that seems to float on a reflecting pond." },
-      { name: "Amon Carter Museum of American Art", category: "Museum", area: "Cultural District", blurb: "Free admission and a standout collection of Western art, including Remington and Russell." },
-      { name: "Billy Bob's Texas", category: "Music", area: "Stockyards", blurb: "A giant honky-tonk with live country music, line dancing and indoor bull riding." },
-      { name: "Sundance Square", category: "Neighborhood", area: "Downtown", blurb: "A lively downtown plaza surrounded by restored brick buildings, restaurants and shops." },
-      { name: "Fort Worth Botanic Garden", category: "Outdoors", area: "Cultural District", blurb: "One of the oldest botanic gardens in Texas, with a beloved Japanese garden." },
-      { name: "Fort Worth Water Gardens", category: "Outdoors", area: "Downtown", blurb: "A dramatic concrete park of terraced pools and cascading water designed by Philip Johnson." },
-      { name: "Fort Worth Zoo", category: "Family", area: "Forest Park", blurb: "One of the oldest zoos in Texas and a regular on lists of the best zoos in the country." },
-      { name: "National Cowgirl Museum and Hall of Fame", category: "Museum", area: "Cultural District", blurb: "Celebrates women who shaped the American West, from ranchers to rodeo stars." }
+      { name: "Kimbell Art Museum", category: "Museum", area: "Cultural District", blurb: "Louis Kahn's vaulted galleries, lit by silver daylight, are reason enough to come. The collection, from Michelangelo to Matisse, is small and superb.", tip: "The permanent collection is free; special exhibitions are ticketed." },
+      { name: "Fort Worth Stockyards", category: "Landmark", area: "Stockyards", blurb: "The old livestock exchange, now a district of saloons, western wear and rodeos. A small herd of longhorns walks down Exchange Avenue twice a day.", tip: "The cattle drives usually run at 11:30 a.m. and 4 p.m." },
+      { name: "Modern Art Museum of Fort Worth", category: "Museum", area: "Cultural District", blurb: "Tadao Ando's concrete-and-glass pavilions sit on a reflecting pond, across the lawn from the Kimbell. Postwar and contemporary art inside." },
+      { name: "Amon Carter Museum of American Art", category: "Museum", area: "Cultural District", blurb: "A strong collection of American art, from Remington and Russell to Georgia O'Keeffe, with free admission." },
+      { name: "Fort Worth Water Gardens", category: "Outdoors", area: "Downtown", blurb: "Philip Johnson's concrete terraces of pools and falling water, including one you can walk down into. Striking, and cool on a hot day." },
+      { name: "Fort Worth Botanic Garden", category: "Outdoors", area: "Cultural District", blurb: "Opened in 1934, it's the oldest botanic garden in Texas. The Japanese Garden, with its koi and stone paths, is the highlight." },
+      { name: "Billy Bob's Texas", category: "Music", area: "Stockyards", blurb: "A honky-tonk the size of a city block, with live country acts, line dancing and live bull riding on weekends." },
+      { name: "National Cowgirl Museum and Hall of Fame", category: "Museum", area: "Cultural District", blurb: "Honors women who shaped the American West, from ranchers and rodeo riders to artists and writers." },
+      { name: "Sundance Square", category: "Neighborhood", area: "Downtown", blurb: "A downtown plaza ringed by restored brick buildings, restaurants and a large Chisholm Trail mural. Lively at night." },
+      { name: "Fort Worth Zoo", category: "Family", area: "Forest Park", blurb: "Founded in 1909, the oldest zoo in Texas, and regularly ranked among the best in the country." }
     ]
   },
   {
     slug: "el-paso",
     name: "El Paso",
     region: "Far West Texas",
-    tagline: "Desert mountains, borderland culture and the oldest missions in Texas.",
-    colors: ["#9a3412", "#6d28d9"],
+    tagline: "Desert mountains, borderland food and the oldest missions in Texas.",
+    intro:
+      "El Paso sits closer to San Diego than to Houston, and it feels like nowhere else in the state. The Franklin Mountains split the city in two, Juárez spreads out across the river, and the Mission Trail follows the Rio Grande south through some of the oldest communities in Texas.",
     places: [
-      { name: "Franklin Mountains State Park", category: "Outdoors", area: "Northwest El Paso", blurb: "One of the largest urban parks in the country, with desert hiking and mountain biking inside the city." },
-      { name: "Scenic Drive Overlook", category: "Landmark", area: "Rim Area", blurb: "A winding road along the mountain with a sweeping view of El Paso and Ciudad Juárez, best at night." },
-      { name: "Hueco Tanks State Park & Historic Site", category: "Outdoors", area: "East of town", blurb: "Famous for rock climbing and ancient pictographs. Entry is limited, so reserve ahead." },
-      { name: "Mission Trail", category: "Landmark", area: "Lower Valley", blurb: "Ysleta, Socorro and San Elizario: historic adobe missions along a short drive through the valley." },
-      { name: "Chamizal National Memorial", category: "Landmark", area: "South Central", blurb: "A National Park Service site honoring the peaceful settlement of a border dispute, with free outdoor concerts." },
-      { name: "El Paso Museum of Art", category: "Museum", area: "Downtown", blurb: "A free museum with European, American and Mexican art, right downtown." },
-      { name: "Plaza Theatre", category: "Landmark", area: "Downtown", blurb: "A restored 1930 Spanish-style movie palace that now hosts Broadway tours and concerts." },
-      { name: "San Jacinto Plaza", category: "Outdoors", area: "Downtown", blurb: "The heart of downtown, with a fountain, events, and a nod to the alligators that once lived here." },
-      { name: "El Paso Holocaust Museum", category: "Museum", area: "Downtown", blurb: "A moving, free museum dedicated to Holocaust education and remembrance." },
-      { name: "L&J Cafe", category: "Food", area: "Central El Paso", blurb: "A family-run Mexican restaurant serving El Paso since 1927, next to Concordia Cemetery." }
+      { name: "Franklin Mountains State Park", category: "Outdoors", area: "Northwest El Paso", blurb: "About 26,000 acres of Chihuahuan Desert mountains entirely inside the city limits, with trails for every level.", tip: "Start hikes early. There's little shade, and summer afternoons are brutal." },
+      { name: "Scenic Drive Overlook", category: "Landmark", area: "Rim Area", blurb: "A road cut into the side of the mountain with a view across El Paso and Ciudad Juárez. At night, the two cities look like one." },
+      { name: "Hueco Tanks State Park & Historic Site", category: "Outdoors", area: "East of El Paso", blurb: "Rock formations known worldwide for bouldering, and home to thousands of years of pictographs, including hundreds of painted masks.", tip: "Daily visitor numbers are capped. Reserve your entry ahead with Texas State Parks." },
+      { name: "Mission Trail", category: "Landmark", area: "Lower Valley", blurb: "Ysleta Mission, Socorro Mission and the San Elizario Presidio Chapel, all a short drive apart. Ysleta traces back to 1680, making it among the oldest missions in Texas." },
+      { name: "Chamizal National Memorial", category: "Landmark", area: "South Central", blurb: "A National Park Service site marking the peaceful settlement of a century-old border dispute. Free outdoor concerts run in summer." },
+      { name: "L&J Cafe", category: "Food", area: "Central El Paso", blurb: "Family-run since 1927, next to Concordia Cemetery, and as good a place as any to learn what El Paso does with green chile." },
+      { name: "El Paso Museum of Art", category: "Museum", area: "Downtown", blurb: "European, American and Mexican art in a free downtown museum, a short walk from San Jacinto Plaza." },
+      { name: "Plaza Theatre", category: "Landmark", area: "Downtown", blurb: "A 1930 Spanish Colonial movie palace with a ceiling painted like a night sky. Restored, and now home to touring shows and concerts." },
+      { name: "El Paso Holocaust Museum", category: "Museum", area: "Downtown", blurb: "A free museum devoted to Holocaust history and remembrance. Small, thoughtful and moving." },
+      { name: "San Jacinto Plaza", category: "Outdoors", area: "Downtown", blurb: "The center of downtown since the 1880s. The alligator sculpture remembers the real alligators that lived in its pond for decades." }
     ]
   }
 ];

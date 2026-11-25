@@ -3,26 +3,38 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Texas Top 10 — The best places in every Texas city</title>
-  <meta name="description" content="The top 10 places to see, eat and explore in cities across Texas." />
+  <title>Texas Top 10</title>
+  <meta name="description" content="Ten places to see in each Texas city, chosen and written by people who go." />
+  <meta name="theme-color" content="#ffffff" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="#/">
-      <span class="brand-star" aria-hidden="true">★</span>
-      <span>Texas Top 10</span>
-    </a>
-    <nav class="header-nav">
-      <a href="#/">Cities</a>
-      <a href="#/about">About</a>
-    </nav>
+  <a class="skip" href="#app">Skip to content</a>
+  <header class="globalnav">
+    <div class="globalnav-inner">
+      <a class="wordmark" href="#/">Texas Top 10</a>
+      <nav aria-label="Main">
+        <a href="#/" data-nav="home">Cities</a>
+        <a href="#/method" data-nav="method">How We Choose</a>
+        <a href="#/about" data-nav="about">About</a>
+      </nav>
+    </div>
   </header>
 
   <main id="app" tabindex="-1"></main>
 
-  <footer class="site-footer">
-    <p>Texas Top 10 · Hours and details change, so check before you go.</p>
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-note">Hours, prices and access change. Confirm details with each place before you visit.</p>
+      <div class="footer-row">
+        <p>Texas Top 10 · An independent city guide</p>
+        <nav aria-label="Footer">
+          <a href="#/">Cities</a>
+          <a href="#/method">How We Choose</a>
+          <a href="#/about">About</a>
+        </nav>
+      </div>
+    </div>
   </footer>
 
   <script src="data/cities.js"></script>
