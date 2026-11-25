@@ -4,11 +4,12 @@
   const app = document.getElementById("app");
   const cities = window.CITIES || [];
   const UPDATED = "November 2026";
+  const totalPlaces = cities.reduce((n, c) => n + c.places.length, 0);
 
   const esc = (s) =>
     String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
-
   const pad = (n) => String(n).padStart(2, "0");
+  const go = (slug) => (location.hash = `#/city/${slug}`);
 
   const appleMaps = (place, city) =>
     "https://maps.apple.com/?q=" + encodeURIComponent(`${place.name}, ${city.name}, TX`);
@@ -25,7 +26,7 @@
     });
   }
 
-  // Fade sections in as they scroll into view.
+  // Fade elements in as they scroll into view.
   let observer;
   function reveal() {
     if (observer) observer.disconnect();
@@ -39,9 +40,51 @@
             observer.unobserve(e.target);
           }
         }),
-      { rootMargin: "0px 0px -8% 0px" }
+      { rootMargin: "0px 0px -6% 0px" }
     );
     els.forEach((e) => observer.observe(e));
+  }
+
+  /* ---------- Home ---------- */
+
+  function panelIdle() {
+    return `
+      <div class="panel-content idle">
+        <span class="eyebrow">Explore</span>
+        <h2 class="panel-title">Pick a city.</h2>
+        <p class="panel-sub">${
+          window.matchMedia("(hover: none)").matches
+            ? "Tap a city on the map to zoom in and see what's on its list. Tap again to open the full ten."
+            : "Hover over a city on the map to zoom in and see what's on its list. Click to open the full ten."
+        }</p>
+        <div class="stats">
+          <div><span class="stat">${cities.length}</span><span class="stat-label">cities</span></div>
+          <div><span class="stat">${totalPlaces}</span><span class="stat-label">places</span></div>
+          <div><span class="stat">10</span><span class="stat-label">per city</span></div>
+        </div>
+      </div>`;
+  }
+
+  function panelCity(city) {
+    return `
+      <div class="panel-content" data-slug="${city.slug}">
+        <span class="eyebrow">${esc(city.region)}</span>
+        <h2 class="panel-title">${esc(city.name)}</h2>
+        <p class="panel-sub">${esc(city.tagline)}</p>
+        <ol class="peek">
+          ${city.places
+            .slice(0, 5)
+            .map(
+              (p, i) => `
+            <li style="animation-delay:${120 + i * 55}ms">
+              <span class="peek-n">${pad(i + 1)}</span>
+              <span class="peek-text"><strong>${esc(p.name)}</strong><span>${esc(p.category)} · ${esc(p.area)}</span></span>
+            </li>`
+            )
+            .join("")}
+        </ol>
+        <a class="button" href="#/city/${city.slug}" style="animation-delay:480ms">See all ${city.places.length} in ${esc(city.name)}</a>
+      </div>`;
   }
 
   function tile(city) {
@@ -49,7 +92,12 @@
       <a class="tile" href="#/city/${city.slug}">
         <span class="region">${esc(city.region)}</span>
         <h3>${esc(city.name)}</h3>
-        <p>${esc(city.tagline)}</p>
+        <div class="tile-swap">
+          <p class="tile-tagline">${esc(city.tagline)}</p>
+          <ol class="tile-peek">
+            ${city.places.slice(0, 3).map((p, i) => `<li style="transition-delay:${60 + i * 50}ms"><span>${pad(i + 1)}</span>${esc(p.name)}</li>`).join("")}
+          </ol>
+        </div>
         <div class="tile-foot">
           <span class="count">${city.places.length} places</span>
           <span class="more">See the list</span>
@@ -61,20 +109,24 @@
     document.title = "Texas Top 10";
     setNav("home");
     app.innerHTML = `
-      <section class="hero">
-        <span class="eyebrow">Texas Top 10</span>
-        <h1 class="headline">Ten places.<br />Every city.</h1>
-        <p class="subhead">A short list for each Texas city: the landmarks, museums, parks and tables we'd send a friend to first.</p>
-        <div class="cta-row">
-          <a class="more" href="#cities">Browse the cities</a>
-          <a class="more" href="#/method">How we choose</a>
+      <section class="stage">
+        <div class="stage-head">
+          <span class="eyebrow">Texas Top 10</span>
+          <h1 class="headline">Ten places.<br />Every city.</h1>
+        </div>
+        <div class="stage-grid">
+          <div class="map-wrap" id="map"></div>
+          <aside class="panel" id="panel" aria-live="polite"></aside>
+        </div>
+        <div class="city-strip" role="list" aria-label="Cities">
+          ${cities.map((c) => `<a role="listitem" class="city-chip" href="#/city/${c.slug}" data-slug="${c.slug}">${esc(c.name)}</a>`).join("")}
         </div>
       </section>
 
       <section class="section section-alt" id="cities">
         <div class="container-wide">
           <div class="section-head reveal">
-            <h2 class="headline-md">Start with a city.</h2>
+            <h2 class="headline-md">Every list, at a glance.</h2>
             <label class="searchfield">
               ${searchIcon}
               <input id="search" type="search" placeholder="Search cities and places" aria-label="Search cities and places" autocomplete="off" />
@@ -98,6 +150,48 @@
         </div>
       </section>`;
 
+    // Map + preview panel
+    const panel = document.getElementById("panel");
+    const stage = app.querySelector(".stage-grid");
+    const map = TexasMap.create(document.getElementById("map"), { cities, interactive: true, id: "home" });
+    let shown = null;
+    let leaveTimer;
+
+    const show = (slug) => {
+      clearTimeout(leaveTimer);
+      if (shown === slug) return;
+      shown = slug;
+      const city = cities.find((c) => c.slug === slug);
+      map.focus(slug);
+      panel.innerHTML = city ? panelCity(city) : panelIdle();
+      app.querySelectorAll(".city-chip").forEach((ch) => ch.classList.toggle("active", ch.dataset.slug === slug));
+    };
+    const clear = () => {
+      shown = null;
+      map.reset();
+      panel.innerHTML = panelIdle();
+      app.querySelectorAll(".city-chip").forEach((ch) => ch.classList.remove("active"));
+    };
+
+    map.on("hover", show);
+    map.on("select", go);
+    // Leaving the map area zooms back out, after a short pause so the panel can be reached.
+    // Mouse only: on touch screens the preview stays until another city is tapped.
+    const leave = (e) => {
+      if (e.pointerType !== "mouse") return;
+      clearTimeout(leaveTimer);
+      leaveTimer = setTimeout(clear, 500);
+    };
+    stage.addEventListener("pointerleave", leave);
+    stage.addEventListener("pointerenter", () => clearTimeout(leaveTimer));
+    app.querySelectorAll(".city-chip").forEach((ch) => {
+      ch.addEventListener("pointerenter", (e) => e.pointerType === "mouse" && show(ch.dataset.slug));
+      ch.addEventListener("focus", () => ch.matches(":focus-visible") && show(ch.dataset.slug));
+    });
+    app.querySelector(".city-strip").addEventListener("pointerleave", leave);
+    panel.innerHTML = panelIdle();
+
+    // Tiles + search
     const grid = document.getElementById("tiles");
     const search = document.getElementById("search");
     const draw = (q) => {
@@ -115,6 +209,8 @@
     draw("");
   }
 
+  /* ---------- City ---------- */
+
   function renderCity(slug) {
     const i = cities.findIndex((c) => c.slug === slug);
     if (i < 0) return renderNotFound();
@@ -128,18 +224,22 @@
 
     app.innerHTML = `
       <header class="city-head">
-        <div class="container">
-          <nav class="crumbs" aria-label="Breadcrumb"><a href="#/">Texas</a><span>›</span>${esc(city.name)}</nav>
-          <span class="eyebrow">${esc(city.region)}</span>
-          <h1 class="headline">${esc(city.name)}</h1>
-          <p class="intro">${esc(city.intro)}</p>
-          <div class="city-meta"><span>${city.places.length} places</span><span>Updated ${UPDATED}</span></div>
+        <div class="container city-head-grid">
+          <div>
+            <nav class="crumbs" aria-label="Breadcrumb"><a href="#/">Texas</a><span>›</span>${esc(city.name)}</nav>
+            <span class="eyebrow">${esc(city.region)}</span>
+            <h1 class="headline">${esc(city.name)}</h1>
+            <p class="intro">${esc(city.intro)}</p>
+            <div class="city-meta"><span>${city.places.length} places</span><span>Updated ${UPDATED}</span></div>
+          </div>
+          <div class="mini-map" id="mini-map" aria-hidden="true"></div>
         </div>
       </header>
 
       <div class="toolbar">
         <div class="container">
           <div class="segmented" role="group" aria-label="Filter by category">
+            <span class="seg-thumb" aria-hidden="true"></span>
             ${cats.map((c, k) => `<button data-cat="${esc(c)}" aria-pressed="${k === 0}">${esc(c)}</button>`).join("")}
           </div>
         </div>
@@ -154,18 +254,22 @@
         </div>
       </section>`;
 
+    // Mini map starts on the whole state, then glides in to the city.
+    const mini = TexasMap.create(document.getElementById("mini-map"), { cities, interactive: false, id: "mini" });
+    setTimeout(() => mini.focus(city.slug, 3.2), 250);
+
     const list = document.getElementById("list");
     const draw = (cat) => {
       list.innerHTML = city.places
         .map((p, k) => ({ p, rank: k + 1 }))
         .filter(({ p }) => cat === "All" || p.category === cat)
         .map(
-          ({ p, rank }) => `
-          <li class="entry">
+          ({ p, rank }, k) => `
+          <li class="entry" style="animation-delay:${Math.min(k, 6) * 60}ms">
             <div class="n" aria-hidden="true">${pad(rank)}</div>
             <div>
               <div class="kicker">${esc(p.category)}${p.area ? ` <span class="area">· ${esc(p.area)}</span>` : ""}</div>
-              <h2><span class="visually-hidden" style="position:absolute;left:-9999px">Number ${rank}: </span>${esc(p.name)}</h2>
+              <h2><span class="sr">Number ${rank}: </span>${esc(p.name)}</h2>
               <p class="body">${esc(p.blurb)}</p>
               ${p.tip ? `<p class="tip"><strong>Good to know.</strong> ${esc(p.tip)}</p>` : ""}
               <div class="links">
@@ -178,15 +282,26 @@
         .join("");
     };
 
-    app.querySelectorAll(".segmented button").forEach((b) =>
+    // Segmented control with a sliding thumb.
+    const seg = app.querySelector(".segmented");
+    const thumb = seg.querySelector(".seg-thumb");
+    const moveThumb = (btn) => {
+      thumb.style.width = btn.offsetWidth + "px";
+      thumb.style.transform = `translateX(${btn.offsetLeft - 3}px)`;
+    };
+    seg.querySelectorAll("button").forEach((b) =>
       b.addEventListener("click", () => {
-        app.querySelectorAll(".segmented button").forEach((x) => x.setAttribute("aria-pressed", "false"));
+        seg.querySelectorAll("button").forEach((x) => x.setAttribute("aria-pressed", "false"));
         b.setAttribute("aria-pressed", "true");
+        moveThumb(b);
         draw(b.dataset.cat);
       })
     );
+    requestAnimationFrame(() => moveThumb(seg.querySelector("button")));
     draw("All");
   }
+
+  /* ---------- Text pages ---------- */
 
   function renderMethod() {
     document.title = "How We Choose — Texas Top 10";
@@ -228,6 +343,8 @@
       </article>`;
   }
 
+  /* ---------- Router ---------- */
+
   function route() {
     const hash = location.hash;
     // In-page anchor on the home page (e.g. #cities): keep home rendered and scroll.
@@ -242,6 +359,12 @@
     else if (section === "method") renderMethod();
     else if (section === "about") renderAbout();
     else renderHome();
+
+    // Page transition
+    app.classList.remove("enter");
+    void app.offsetWidth;
+    app.classList.add("enter");
+
     window.scrollTo({ top: 0, behavior: "instant" });
     app.focus({ preventScroll: true });
     reveal();

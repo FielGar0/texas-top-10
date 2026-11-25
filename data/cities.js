@@ -1,9 +1,11 @@
 // City data for Texas Top 10.
 // City: slug (URL), name, region, tagline (one line for the city tile), intro (opening paragraph), places (ranked).
+// lat, lon: map position. labelSide: "left" to put the map label on the left of the dot.
 // Place: name, category, area, blurb, optional tip (a practical "good to know" note).
 window.CITIES = [
   {
     slug: "austin",
+    lat: 30.27, lon: -97.74,
     name: "Austin",
     region: "Central Texas",
     tagline: "Cold springs, a pink granite Capitol and brisket at dawn.",
@@ -24,6 +26,7 @@ window.CITIES = [
   },
   {
     slug: "san-antonio",
+    lat: 29.42, lon: -98.49,
     name: "San Antonio",
     region: "South Texas",
     tagline: "Spanish missions, a river below the street and Saturday at the Pearl.",
@@ -44,6 +47,7 @@ window.CITIES = [
   },
   {
     slug: "houston",
+    lat: 29.76, lon: -95.37,
     name: "Houston",
     region: "Gulf Coast",
     tagline: "Mission control, a museum district and the best eating in the state.",
@@ -64,6 +68,7 @@ window.CITIES = [
   },
   {
     slug: "dallas",
+    lat: 32.78, lon: -96.80,
     name: "Dallas",
     region: "North Texas",
     tagline: "A downtown arts district, Dealey Plaza and a lake for sunset.",
@@ -84,6 +89,7 @@ window.CITIES = [
   },
   {
     slug: "fort-worth",
+    lat: 32.75, lon: -97.33, labelSide: "left",
     name: "Fort Worth",
     region: "North Texas",
     tagline: "Longhorns on Exchange Avenue and three great museums.",
@@ -104,6 +110,7 @@ window.CITIES = [
   },
   {
     slug: "el-paso",
+    lat: 31.76, lon: -106.49,
     name: "El Paso",
     region: "Far West Texas",
     tagline: "Desert mountains, borderland food and the oldest missions in Texas.",
