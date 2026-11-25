@@ -1,10 +1,11 @@
 // City data for Texas Top 10.
 // City: slug (URL), name, region, tagline (one line for the city tile), intro (opening paragraph), places (ranked).
-// lat, lon: map position. labelSide: "left" to put the map label on the left of the dot.
+// group: region used for browsing. lat, lon: map position. labelSide: "left" to put the map label on the left of the dot.
 // Place: name, category, area, blurb, optional tip (a practical "good to know" note).
 window.CITIES = [
   {
     slug: "austin",
+    group: "Central Texas",
     lat: 30.27, lon: -97.74,
     name: "Austin",
     region: "Central Texas",
@@ -26,6 +27,7 @@ window.CITIES = [
   },
   {
     slug: "san-antonio",
+    group: "Central Texas",
     lat: 29.42, lon: -98.49,
     name: "San Antonio",
     region: "South Texas",
@@ -47,6 +49,7 @@ window.CITIES = [
   },
   {
     slug: "houston",
+    group: "Gulf Coast",
     lat: 29.76, lon: -95.37,
     name: "Houston",
     region: "Gulf Coast",
@@ -68,6 +71,7 @@ window.CITIES = [
   },
   {
     slug: "dallas",
+    group: "North Texas",
     lat: 32.78, lon: -96.80,
     name: "Dallas",
     region: "North Texas",
@@ -89,6 +93,7 @@ window.CITIES = [
   },
   {
     slug: "fort-worth",
+    group: "North Texas",
     lat: 32.75, lon: -97.33, labelSide: "left",
     name: "Fort Worth",
     region: "North Texas",
@@ -110,6 +115,7 @@ window.CITIES = [
   },
   {
     slug: "el-paso",
+    group: "West Texas",
     lat: 31.76, lon: -106.49,
     name: "El Paso",
     region: "Far West Texas",
@@ -131,6 +137,7 @@ window.CITIES = [
   },
   {
     slug: "corpus-christi",
+    group: "Gulf Coast",
     lat: 27.8, lon: -97.4,
     name: "Corpus Christi",
     region: "Coastal Bend",
@@ -152,6 +159,7 @@ window.CITIES = [
   },
   {
     slug: "galveston",
+    group: "Gulf Coast",
     lat: 29.3, lon: -94.8, labelSide: "left",
     name: "Galveston",
     region: "Gulf Coast",
@@ -173,6 +181,7 @@ window.CITIES = [
   },
   {
     slug: "fredericksburg",
+    group: "Central Texas",
     lat: 30.27, lon: -98.87, labelSide: "left",
     name: "Fredericksburg",
     region: "Hill Country",
@@ -194,6 +203,7 @@ window.CITIES = [
   },
   {
     slug: "waco",
+    group: "Central Texas",
     lat: 31.55, lon: -97.15,
     name: "Waco",
     region: "Central Texas",
@@ -215,6 +225,7 @@ window.CITIES = [
   },
   {
     slug: "lubbock",
+    group: "Panhandle & Plains",
     lat: 33.58, lon: -101.86,
     name: "Lubbock",
     region: "South Plains",
@@ -236,6 +247,7 @@ window.CITIES = [
   },
   {
     slug: "amarillo",
+    group: "Panhandle & Plains",
     lat: 35.22, lon: -101.83,
     name: "Amarillo",
     region: "Panhandle",
@@ -253,6 +265,138 @@ window.CITIES = [
       { name: "Amarillo Botanical Gardens", category: "Outdoors", area: "Medical Center", blurb: "Gardens designed for the High Plains, with a tropical conservatory for cold days." },
       { name: "Don Harrington Discovery Center", category: "Family", area: "Medical Center", blurb: "A hands-on science center with a planetarium. Outside stands the Helium Monument, a nod to Amarillo's history as the Helium Capital of the World." },
       { name: "Wonderland Park", category: "Family", area: "North Amarillo", blurb: "A family-owned amusement park open since 1951, known for the Texas Tornado, a double-loop roller coaster." }
+    ]
+  },
+  {
+    slug: "new-braunfels",
+    group: "Central Texas",
+    lat: 29.7, lon: -98.12,
+    name: "New Braunfels",
+    region: "Hill Country",
+    tagline: "Spring-fed rivers, a historic dance hall and caverns underfoot.",
+    intro:
+      "New Braunfels was settled by German immigrants in 1845, and the town still bakes, brews and dances like it. In summer, life revolves around two rivers: the short, cold, spring-fed Comal and the longer Guadalupe. Gruene, on the north side of town, adds the oldest dance hall in the state.",
+    places: [
+      { name: "Comal River", category: "Outdoors", area: "Downtown", blurb: "A spring-fed river only a few miles long that stays cool all summer. Floating it on a tube is the town's signature afternoon.", tip: "Outfitters along the river rent tubes and run shuttles. Go early on summer weekends." },
+      { name: "Schlitterbahn New Braunfels", category: "Family", area: "Downtown", blurb: "The waterpark that grew up on the banks of the Comal, with river-fed rides and tube chutes shaded by old trees.", tip: "Open seasonally. Buy tickets online and arrive at opening." },
+      { name: "Gruene Hall", category: "Music", area: "Gruene", blurb: "Built in 1878 and still hosting live music most days, it bills itself as the oldest continually operating dance hall in Texas." },
+      { name: "Gruene Historic District", category: "Neighborhood", area: "Gruene", blurb: "A small 19th-century town absorbed into New Braunfels, with antique shops, a general store and restaurants overlooking the Guadalupe." },
+      { name: "Natural Bridge Caverns", category: "Nature", area: "West of Town", blurb: "The largest known commercial caverns in Texas, named for the limestone bridge over the entrance. Guided tours go deep underground.", tip: "The caves stay around 70 degrees and humid year-round." },
+      { name: "Guadalupe River", category: "Outdoors", area: "Below Canyon Lake", blurb: "Clear water, limestone banks and cypress trees. Tubing and rafting outfitters line River Road above Gruene." },
+      { name: "Landa Park", category: "Outdoors", area: "Downtown", blurb: "Fifty-one acres around the headwaters of the Comal, with a spring-fed pool, paddle boats and a miniature train." },
+      { name: "Canyon Lake Gorge", category: "Outdoors", area: "Canyon Lake", blurb: "A flood in 2002 tore through the spillway and exposed a canyon of fossils, springs and dinosaur tracks in a matter of days.", tip: "Visits are by guided tour only. Reserve ahead." },
+      { name: "Naegelin's Bakery", category: "Food", area: "Downtown", blurb: "Open since 1868 and billed as the oldest bakery in Texas. Get the apple strudel or a kolache." },
+      { name: "Sophienburg Museum", category: "Museum", area: "Downtown", blurb: "Local history on the hill where the town's founder built his headquarters, telling the story of the German settlers." }
+    ]
+  },
+  {
+    slug: "marfa",
+    group: "West Texas",
+    lat: 30.31, lon: -104.02,
+    name: "Marfa",
+    region: "Big Bend Country",
+    tagline: "Minimalist art, mystery lights and the gateway to Big Bend.",
+    intro:
+      "Marfa is a ranching town of a couple thousand people that became an art destination when Donald Judd moved here in the 1970s. It's also the best base for exploring Far West Texas: dark skies, the Davis Mountains, and the vast, remote landscapes of Big Bend to the south.",
+    places: [
+      { name: "Big Bend National Park", category: "Outdoors", area: "Two hours south", blurb: "More than 800,000 acres of desert, the Chisos Mountains and the Rio Grande canyons. Santa Elena Canyon alone is worth the drive.", tip: "Distances are huge and services are few. Fill up on gas and book lodging well ahead." },
+      { name: "Chinati Foundation", category: "Museum", area: "South Marfa", blurb: "Donald Judd's museum on a former army post, including 100 milled aluminum works set in two converted artillery sheds.", tip: "Most of the collection is seen on guided tours. Reserve ahead." },
+      { name: "Marfa Lights Viewing Area", category: "Nature", area: "East of Town", blurb: "A roadside platform for watching the horizon at night for the unexplained lights that have been reported here for well over a century." },
+      { name: "McDonald Observatory", category: "Museum", area: "Fort Davis", blurb: "Some of the darkest skies in the continental U.S. Evening star parties let you look through telescopes with astronomers.", tip: "Star parties sell out. Book ahead and bring a jacket." },
+      { name: "Prada Marfa", category: "Quirky", area: "Near Valentine", blurb: "A permanent art installation shaped like a luxury boutique, alone on the side of U.S. 90 about forty minutes northwest of town." },
+      { name: "Big Bend Ranch State Park", category: "Outdoors", area: "Presidio County", blurb: "The largest state park in Texas. The River Road along the Rio Grande is one of the most spectacular drives in the state." },
+      { name: "Fort Davis National Historic Site", category: "Landmark", area: "Fort Davis", blurb: "One of the best-preserved frontier military posts in the Southwest, set in a box canyon in the Davis Mountains." },
+      { name: "Davis Mountains State Park", category: "Outdoors", area: "Fort Davis", blurb: "Skyline Drive climbs to overlooks across the mountains. The Indian Lodge, built in the 1930s, offers rooms inside the park." },
+      { name: "Judd Foundation", category: "Museum", area: "Downtown", blurb: "Donald Judd's own home, studios and library, kept as he left them.", tip: "Tours are by reservation and fill up quickly." },
+      { name: "Presidio County Courthouse", category: "Landmark", area: "Downtown", blurb: "An 1886 courthouse at the head of Highland Avenue, the grandest building in town and the anchor of every Marfa photo." }
+    ]
+  },
+  {
+    slug: "south-padre-island",
+    group: "Gulf Coast",
+    lat: 26.11, lon: -97.17,
+    name: "South Padre Island",
+    region: "Rio Grande Valley",
+    tagline: "The southern tip of Texas: warm water, sea turtles and dolphins.",
+    intro:
+      "South Padre Island is the warmest stretch of the Texas coast, a narrow barrier island reached by a long causeway from Port Isabel. The beaches are the draw, but the bay side is just as good, with dolphins, birding boardwalks and calm water for kayaks.",
+    places: [
+      { name: "South Padre Island Beaches", category: "Outdoors", area: "Gulf Side", blurb: "Wide, sandy Gulf beaches with clearer water than most of the Texas coast. Public access points are spaced along Gulf Boulevard." },
+      { name: "Sea Turtle Inc.", category: "Nature", area: "South Padre", blurb: "A rescue and rehabilitation center for injured sea turtles. Resident turtles that can't be released are on view.", tip: "Check the schedule for educational presentations and summer hatchling releases." },
+      { name: "South Padre Island Birding, Nature Center & Alligator Sanctuary", category: "Nature", area: "Bay Side", blurb: "Boardwalks over the Laguna Madre wetlands, with herons, spoonbills and alligators. A stop on two major migratory flyways." },
+      { name: "Dolphin Watching on the Laguna Madre", category: "Nature", area: "Bay Side", blurb: "Bottlenose dolphins live in the bay year-round. Boat tours leave from the island and Port Isabel daily." },
+      { name: "Isla Blanca Park", category: "Outdoors", area: "Southern Tip", blurb: "A county park at the island's southern tip, with beach, pavilions and a jetty for watching ships enter the channel." },
+      { name: "Port Isabel Lighthouse", category: "Landmark", area: "Port Isabel", blurb: "Built in 1852 and now a state historic site. Climb to the top for a view across the bay to the island." },
+      { name: "Queen Isabella Causeway", category: "Landmark", area: "Port Isabel", blurb: "The longest bridge in Texas, about two and a half miles across the Laguna Madre. The drive in is the island's grand entrance." },
+      { name: "Laguna Atascosa National Wildlife Refuge", category: "Nature", area: "Mainland", blurb: "One of the last U.S. homes of the endangered ocelot, with wildlife drives and some of the best birding in the country." },
+      { name: "Gladys Porter Zoo", category: "Family", area: "Brownsville", blurb: "A well-regarded zoo in Brownsville, about forty minutes away, known for its work breeding endangered species." },
+      { name: "Palmito Ranch Battlefield", category: "Landmark", area: "Near Brownsville", blurb: "Site of the last land battle of the Civil War, fought in May 1865. An overlook explains what happened." }
+    ]
+  },
+  {
+    slug: "tyler",
+    group: "East Texas",
+    lat: 32.35, lon: -95.3,
+    name: "Tyler",
+    region: "Piney Woods",
+    tagline: "The Rose Capital of America, with azaleas and pine forests.",
+    intro:
+      "Tyler grows roses on a scale few places can match, and it has called itself the Rose Capital of America for decades. Come in spring for the azaleas along the brick streets, in October for the Texas Rose Festival, and any time for the pine forests that surround the city.",
+    places: [
+      { name: "Tyler Rose Garden", category: "Outdoors", area: "Rose Park", blurb: "About fourteen acres and tens of thousands of rose bushes, making it one of the largest public rose gardens in the country. Peak bloom is May through October.", tip: "Free to visit. The Texas Rose Festival fills the park each October." },
+      { name: "Azalea & Spring Flower Trail", category: "Neighborhood", area: "Azalea District", blurb: "Each spring, miles of brick streets through the historic Azalea District bloom with azaleas, dogwoods and tulips." },
+      { name: "Tyler State Park", category: "Outdoors", area: "North of Tyler", blurb: "Tall pines around a spring-fed lake, with trails, swimming, paddling and camping just outside the city." },
+      { name: "Caldwell Zoo", category: "Family", area: "North Tyler", blurb: "A well-loved zoo that grew from a schoolyard collection, with African, North American and South American habitats." },
+      { name: "Tyler Museum of Art", category: "Museum", area: "Tyler Junior College", blurb: "Changing exhibitions of American and Texas art, in a modern building next to the community college." },
+      { name: "Discovery Science Place", category: "Family", area: "Downtown", blurb: "A hands-on science museum for kids, with rooms full of experiments and play." },
+      { name: "Goodman-LeGrand House & Museum", category: "Museum", area: "Downtown", blurb: "An 1859 house museum filled with family furnishings, with a garden and grounds that host events." },
+      { name: "Tyler Rose Museum", category: "Museum", area: "Rose Park", blurb: "Next to the Rose Garden, it tells the story of the rose industry and the festival, with gowns worn by past rose queens." },
+      { name: "Lake Tyler", category: "Outdoors", area: "Southeast of Tyler", blurb: "Two connected lakes in the pines, popular for boating, fishing and quiet waterfront parks." },
+      { name: "Kiepersol", category: "Food", area: "Bullard", blurb: "A family-owned estate south of Tyler with a winery, restaurant and distillery among the vineyards." }
+    ]
+  },
+  {
+    slug: "nacogdoches",
+    group: "East Texas",
+    lat: 31.6, lon: -94.66,
+    name: "Nacogdoches",
+    region: "Piney Woods",
+    tagline: "The oldest town in Texas, with azalea gardens and brick streets.",
+    intro:
+      "Nacogdoches calls itself the oldest town in Texas, and its brick streets, historic homes and stories of revolution back it up. Stephen F. Austin State University keeps it lively, and its gardens put on one of the best azalea displays in the state each spring.",
+    places: [
+      { name: "Historic Downtown Nacogdoches", category: "Neighborhood", area: "Downtown", blurb: "Brick streets, restored storefronts and shops around the square of a town founded in 1779." },
+      { name: "Ruby M. Mize Azalea Garden", category: "Outdoors", area: "SFA Campus", blurb: "Thousands of azaleas under the pines on the Stephen F. Austin campus, among the largest azalea gardens in Texas.", tip: "Peak bloom is usually mid-March to early April." },
+      { name: "SFA Gardens", category: "Outdoors", area: "SFA Campus", blurb: "A network of university gardens, including a native plant center with trails through the East Texas woods." },
+      { name: "Stone Fort Museum", category: "Museum", area: "SFA Campus", blurb: "A replica of the 1779 stone house built by town founder Antonio Gil Y'Barbo, which played a role in several early Texas revolts." },
+      { name: "Millard's Crossing Historic Village", category: "Landmark", area: "North Nacogdoches", blurb: "Historic East Texas buildings moved to one site, including log cabins, a chapel and a Victorian house." },
+      { name: "Sterne-Hoya House Museum", category: "Museum", area: "Downtown", blurb: "An 1830 house where Davy Crockett and Sam Houston were guests, now a free museum and library." },
+      { name: "Durst-Taylor Historic House and Gardens", category: "Museum", area: "Downtown", blurb: "One of the oldest homes in Nacogdoches, restored with period gardens and exhibits on frontier life." },
+      { name: "Oak Grove Cemetery", category: "Landmark", area: "Downtown", blurb: "A historic cemetery where several signers of the Texas Declaration of Independence are buried." },
+      { name: "Lanana Creek Trail", category: "Outdoors", area: "Downtown to SFA", blurb: "A wooded walking trail along the creek that links downtown to the university and its gardens." },
+      { name: "Angelina National Forest", category: "Outdoors", area: "South of Town", blurb: "Pine forests around Sam Rayburn Reservoir, with hiking, fishing and campgrounds within an easy drive." }
+    ]
+  },
+  {
+    slug: "abilene",
+    group: "North Texas",
+    lat: 32.45, lon: -99.73,
+    name: "Abilene",
+    region: "Big Country",
+    tagline: "Frontier history and the Storybook Capital of Texas.",
+    intro:
+      "Abilene began as a cattle shipping town on the Texas and Pacific Railway, and its frontier past is told well here. More recently it has become the Storybook Capital of Texas, with sculptures of children's book characters all over downtown.",
+    places: [
+      { name: "Frontier Texas!", category: "Museum", area: "Downtown", blurb: "A modern museum where life-size projected characters tell the story of the Texas frontier, from buffalo hunters to soldiers." },
+      { name: "Storybook Sculptures", category: "Quirky", area: "Downtown", blurb: "Bronze sculptures of beloved children's book characters scattered through downtown. Kids love finding them all.", tip: "Pick up a sculpture map from the visitor center." },
+      { name: "National Center for Children's Illustrated Literature", category: "Museum", area: "Downtown", blurb: "Exhibitions of original artwork from picture books, often with hands-on activities. Admission is free." },
+      { name: "The Grace Museum", category: "Museum", area: "Downtown", blurb: "Art, history and a children's museum inside a restored 1909 railroad hotel." },
+      { name: "Paramount Theatre", category: "Landmark", area: "Downtown", blurb: "A 1930 movie palace with a painted sky ceiling, restored and showing films and performances." },
+      { name: "Abilene Zoo", category: "Family", area: "Nelson Park", blurb: "A compact zoo with giraffes, a discovery center and animals from the Americas and Africa." },
+      { name: "Buffalo Gap Historic Village", category: "Landmark", area: "Buffalo Gap", blurb: "Original frontier buildings, including an old county courthouse and jail, in a small town just south of Abilene." },
+      { name: "Perini Ranch Steakhouse", category: "Food", area: "Buffalo Gap", blurb: "A celebrated steakhouse in a converted barn, known for mesquite-grilled steaks and its peppered beef tenderloin." },
+      { name: "Abilene State Park", category: "Outdoors", area: "Southwest of Abilene", blurb: "Shady pecan groves along Elm Creek, with a swimming pool built by the Civilian Conservation Corps." },
+      { name: "Fort Phantom Hill", category: "Landmark", area: "North of Abilene", blurb: "The stone chimneys and ruins of an 1850s frontier fort, standing alone on the prairie." }
     ]
   }
 ];

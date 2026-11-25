@@ -367,5 +367,207 @@
  },
  "amarillo/Wonderland Park": {
   "article": "Wonderland Park (Texas)"
+ },
+ "new-braunfels/Comal River": {
+  "article": "Comal River"
+ },
+ "new-braunfels/Schlitterbahn New Braunfels": {
+  "article": "Schlitterbahn"
+ },
+ "new-braunfels/Gruene Hall": {
+  "article": "Gruene Hall"
+ },
+ "new-braunfels/Gruene Historic District": {
+  "article": "Gruene, Texas"
+ },
+ "new-braunfels/Natural Bridge Caverns": {
+  "skip": true,
+  "why": "lead image is a logo"
+ },
+ "new-braunfels/Guadalupe River": {
+  "article": "Guadalupe River (Texas)"
+ },
+ "new-braunfels/Landa Park": {
+  "article": "Landa Park"
+ },
+ "new-braunfels/Canyon Lake Gorge": {
+  "article": "Canyon Lake Gorge"
+ },
+ "new-braunfels/Naegelin's Bakery": {
+  "skip": true,
+  "why": "no suitable free photo on Wikipedia"
+ },
+ "new-braunfels/Sophienburg Museum": {
+  "skip": true,
+  "why": "no suitable free photo on Wikipedia"
+ },
+ "marfa/Big Bend National Park": {
+  "article": "Big Bend National Park"
+ },
+ "marfa/Chinati Foundation": {
+  "article": "Chinati Foundation"
+ },
+ "marfa/Marfa Lights Viewing Area": {
+  "article": "Marfa lights"
+ },
+ "marfa/McDonald Observatory": {
+  "article": "McDonald Observatory"
+ },
+ "marfa/Prada Marfa": {
+  "article": "Prada Marfa"
+ },
+ "marfa/Big Bend Ranch State Park": {
+  "article": "Big Bend Ranch State Park"
+ },
+ "marfa/Fort Davis National Historic Site": {
+  "article": "Fort Davis National Historic Site"
+ },
+ "marfa/Davis Mountains State Park": {
+  "article": "Davis Mountains State Park"
+ },
+ "marfa/Judd Foundation": {
+  "article": "Judd Foundation"
+ },
+ "marfa/Presidio County Courthouse": {
+  "article": "Presidio County Courthouse"
+ },
+ "south-padre-island/South Padre Island Beaches": {
+  "article": "South Padre Island"
+ },
+ "south-padre-island/Sea Turtle Inc.": {
+  "article": "Sea Turtle, Inc."
+ },
+ "south-padre-island/South Padre Island Birding, Nature Center & Alligator Sanctuary": {
+  "skip": true,
+  "why": "no suitable free photo on Wikipedia"
+ },
+ "south-padre-island/Dolphin Watching on the Laguna Madre": {
+  "skip": true,
+  "why": "no suitable free photo on Wikipedia"
+ },
+ "south-padre-island/Isla Blanca Park": {
+  "skip": true,
+  "why": "no suitable free photo on Wikipedia"
+ },
+ "south-padre-island/Port Isabel Lighthouse": {
+  "article": "Port Isabel Lighthouse"
+ },
+ "south-padre-island/Queen Isabella Causeway": {
+  "article": "Queen Isabella Causeway"
+ },
+ "south-padre-island/Laguna Atascosa National Wildlife Refuge": {
+  "article": "Laguna Atascosa National Wildlife Refuge"
+ },
+ "south-padre-island/Gladys Porter Zoo": {
+  "article": "Gladys Porter Zoo"
+ },
+ "south-padre-island/Palmito Ranch Battlefield": {
+  "skip": true,
+  "why": "lead image is a battle map"
+ },
+ "tyler/Tyler Rose Garden": {
+  "article": "Tyler Municipal Rose Garden"
+ },
+ "tyler/Azalea & Spring Flower Trail": {
+  "skip": true,
+  "why": "no suitable free photo on Wikipedia"
+ },
+ "tyler/Tyler State Park": {
+  "article": "Tyler State Park"
+ },
+ "tyler/Caldwell Zoo": {
+  "article": "Caldwell Zoo"
+ },
+ "tyler/Tyler Museum of Art": {
+  "article": "Tyler Museum of Art"
+ },
+ "tyler/Discovery Science Place": {
+  "skip": true,
+  "why": "no suitable free photo on Wikipedia"
+ },
+ "tyler/Goodman-LeGrand House & Museum": {
+  "article": "Goodman-LeGrand House"
+ },
+ "tyler/Tyler Rose Museum": {
+  "skip": true,
+  "why": "no suitable free photo on Wikipedia"
+ },
+ "tyler/Lake Tyler": {
+  "article": "Lake Tyler"
+ },
+ "tyler/Kiepersol": {
+  "skip": true,
+  "why": "no suitable free photo on Wikipedia"
+ },
+ "nacogdoches/Historic Downtown Nacogdoches": {
+  "skip": true,
+  "why": "no suitable free photo on Wikipedia"
+ },
+ "nacogdoches/Ruby M. Mize Azalea Garden": {
+  "skip": true,
+  "why": "no suitable free photo on Wikipedia"
+ },
+ "nacogdoches/SFA Gardens": {
+  "skip": true,
+  "why": "no suitable free photo on Wikipedia"
+ },
+ "nacogdoches/Stone Fort Museum": {
+  "article": "Old Stone Fort (Nacogdoches, Texas)"
+ },
+ "nacogdoches/Millard's Crossing Historic Village": {
+  "article": "Millard's Crossing"
+ },
+ "nacogdoches/Sterne-Hoya House Museum": {
+  "article": "Sterne-Hoya House"
+ },
+ "nacogdoches/Durst-Taylor Historic House and Gardens": {
+  "article": "Durst-Taylor House"
+ },
+ "nacogdoches/Oak Grove Cemetery": {
+  "article": "Oak Grove Cemetery (Nacogdoches, Texas)"
+ },
+ "nacogdoches/Lanana Creek Trail": {
+  "skip": true,
+  "why": "no suitable free photo on Wikipedia"
+ },
+ "nacogdoches/Angelina National Forest": {
+  "article": "Angelina National Forest"
+ },
+ "abilene/Frontier Texas!": {
+  "article": "Frontier Texas!"
+ },
+ "abilene/Storybook Sculptures": {
+  "skip": true,
+  "why": "no suitable free photo on Wikipedia"
+ },
+ "abilene/National Center for Children's Illustrated Literature": {
+  "skip": true,
+  "why": "no suitable free photo on Wikipedia"
+ },
+ "abilene/The Grace Museum": {
+  "article": "Grace Museum"
+ },
+ "abilene/Paramount Theatre": {
+  "article": "Paramount Theatre (Abilene, Texas)"
+ },
+ "abilene/Abilene Zoo": {
+  "article": "Abilene Zoo"
+ },
+ "abilene/Buffalo Gap Historic Village": {
+  "article": "Buffalo Gap, Texas"
+ },
+ "abilene/Perini Ranch Steakhouse": {
+  "skip": true,
+  "why": "no suitable free photo on Wikipedia"
+ },
+ "abilene/Abilene State Park": {
+  "article": "Abilene State Park"
+ },
+ "abilene/Fort Phantom Hill": {
+  "article": "Fort Phantom Hill"
+ },
+ "nacogdoches/city": {
+  "skip": true,
+  "why": "lead image is a county locator map"
  }
 }

@@ -1047,5 +1047,380 @@ window.PHOTOS = {
     "alt": "Don Harrington Discovery Center"
    }
   }
+ },
+ "new-braunfels": {
+  "city": {
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Guadalupe_River_of_Texas_IMG_0500.JPG/960px-Guadalupe_River_of_Texas_IMG_0500.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "w": 960,
+   "h": 720,
+   "credit": "Billy Hathorn at English Wikipedia",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+   "page": "https://commons.wikimedia.org/wiki/File:Guadalupe_River_of_Texas_IMG_0500.JPG",
+   "alt": "new-braunfels"
+  },
+  "places": {
+   "Comal River": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Schlitterbahn4.jpg/960px-Schlitterbahn4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "w": 960,
+    "h": 720,
+    "credit": "Rei at English Wikipedia",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Schlitterbahn4.jpg",
+    "alt": "Comal River"
+   },
+   "Gruene Hall": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Gruene_July_2017_1_%28Gruene_Hall%29.jpg/960px-Gruene_July_2017_1_%28Gruene_Hall%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "w": 960,
+    "h": 640,
+    "credit": "Michael Barera",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Gruene_July_2017_1_(Gruene_Hall).jpg",
+    "alt": "Gruene Hall"
+   },
+   "Gruene Historic District": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Gruene_Histric_District_%281_of_1%29.jpg/960px-Gruene_Histric_District_%281_of_1%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "w": 960,
+    "h": 629,
+    "credit": "Renelibrary",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Gruene_Histric_District_(1_of_1).jpg",
+    "alt": "Gruene Historic District"
+   },
+   "Guadalupe River": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Guadalupe_river_state_park_bluff.jpg/960px-Guadalupe_river_state_park_bluff.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "w": 960,
+    "h": 590,
+    "credit": "Larry D. Moore",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Guadalupe_river_state_park_bluff.jpg",
+    "alt": "Guadalupe River"
+   },
+   "Canyon Lake Gorge": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Canyon_Lake_Gorge_March_2017_IMG1741.jpg/960px-Canyon_Lake_Gorge_March_2017_IMG1741.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "w": 960,
+    "h": 540,
+    "credit": "Larry D. Moore",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Canyon_Lake_Gorge_March_2017_IMG1741.jpg",
+    "alt": "Canyon Lake Gorge"
+   }
+  }
+ },
+ "marfa": {
+  "city": {
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/MarfaTX_Downtown_15Aug2012.jpg/960px-MarfaTX_Downtown_15Aug2012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "w": 960,
+   "h": 640,
+   "credit": "Mathieu Lebreton from Paris, France",
+   "license": "CC BY 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:MarfaTX_Downtown_15Aug2012.jpg",
+   "alt": "marfa"
+  },
+  "places": {
+   "Big Bend National Park": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Canyon%2C_Rio_Grande%2C_Texas.jpeg/960px-Canyon%2C_Rio_Grande%2C_Texas.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "w": 960,
+    "h": 720,
+    "credit": "Michael from Minnesota (@Michael)",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Canyon,_Rio_Grande,_Texas.jpeg",
+    "alt": "Big Bend National Park"
+   },
+   "Chinati Foundation": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Chinati_foundation.jpg/960px-Chinati_foundation.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "w": 960,
+    "h": 411,
+    "credit": "Jgc3",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Chinati_foundation.jpg",
+    "alt": "Chinati Foundation"
+   },
+   "Marfa Lights Viewing Area": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Marfa_Mystery_Light_%28cropped_twice%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "w": 960,
+    "h": 1042,
+    "credit": "Jon Hanson from Vienna, VA, USA",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Marfa_Mystery_Light_(cropped_twice).jpg",
+    "alt": "Marfa Lights Viewing Area"
+   },
+   "McDonald Observatory": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/McDonald_Observatory.jpg/960px-McDonald_Observatory.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "w": 960,
+    "h": 378,
+    "credit": "Jason Quinn",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "page": "https://commons.wikimedia.org/wiki/File:McDonald_Observatory.jpg",
+    "alt": "McDonald Observatory"
+   },
+   "Prada Marfa": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/2010-05-25_Prada_Marfa_front.jpg/960px-2010-05-25_Prada_Marfa_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "w": 960,
+    "h": 540,
+    "credit": "rob zand",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:2010-05-25_Prada_Marfa_front.jpg",
+    "alt": "Prada Marfa"
+   },
+   "Big Bend Ranch State Park": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Solitario_Peak.jpg/960px-Solitario_Peak.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "w": 960,
+    "h": 720,
+    "credit": "Surfsupusa at English Wikipedia",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Solitario_Peak.jpg",
+    "alt": "Big Bend Ranch State Park"
+   },
+   "Fort Davis National Historic Site": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Fort_Davis_National_Historic_Site_P9102741.jpg/960px-Fort_Davis_National_Historic_Site_P9102741.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "w": 960,
+    "h": 718,
+    "credit": "National Park Service Digital Image Archives",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Fort_Davis_National_Historic_Site_P9102741.jpg",
+    "alt": "Fort Davis National Historic Site"
+   },
+   "Davis Mountains State Park": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Davis_Mountains_State_Park.jpg/960px-Davis_Mountains_State_Park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "w": 960,
+    "h": 720,
+    "credit": "JasonReina",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Davis_Mountains_State_Park.jpg",
+    "alt": "Davis Mountains State Park"
+   },
+   "Presidio County Courthouse": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Marfa_courthouse.jpg/960px-Marfa_courthouse.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "w": 960,
+    "h": 679,
+    "credit": "The original uploader was Talshiarr at English Wikipedia.",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Marfa_courthouse.jpg",
+    "alt": "Presidio County Courthouse"
+   }
+  }
+ },
+ "south-padre-island": {
+  "city": {
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/01a_-_SOUTH_PADRE_ISLAND%2C_TX_-_From_County_Park_at_south_end_-01_%28March_2012%29_%282%29_%2816658011955%29.jpg/960px-01a_-_SOUTH_PADRE_ISLAND%2C_TX_-_From_County_Park_at_south_end_-01_%28March_2012%29_%282%29_%2816658011955%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "w": 960,
+   "h": 640,
+   "credit": "ALAN SCHMIERER",
+   "license": "CC0",
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "page": "https://commons.wikimedia.org/wiki/File:01a_-_SOUTH_PADRE_ISLAND,_TX_-_From_County_Park_at_south_end_-01_(March_2012)_(2)_(16658011955).jpg",
+   "alt": "south-padre-island"
+  },
+  "places": {
+   "South Padre Island Beaches": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/South_Padre_Island.jpg/960px-South_Padre_Island.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "w": 960,
+    "h": 480,
+    "credit": "Satx usa",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:South_Padre_Island.jpg",
+    "alt": "South Padre Island Beaches"
+   },
+   "Sea Turtle Inc.": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Sea_Turtle_Inc_entrance_south.jpg/960px-Sea_Turtle_Inc_entrance_south.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "w": 960,
+    "h": 720,
+    "credit": "Spheroidite",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Sea_Turtle_Inc_entrance_south.jpg",
+    "alt": "Sea Turtle Inc."
+   },
+   "Port Isabel Lighthouse": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Port_Isabel_Texas_Lighthouse.jpg/960px-Port_Isabel_Texas_Lighthouse.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "w": 960,
+    "h": 1235,
+    "credit": "lfwlfw / Bevo at English Wikipedia",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Port_Isabel_Texas_Lighthouse.jpg",
+    "alt": "Port Isabel Lighthouse"
+   },
+   "Queen Isabella Causeway": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Queen_Isabella_Causeway.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "w": 960,
+    "h": 720,
+    "credit": "Dhruvaraj S",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Queen_Isabella_Causeway.jpg",
+    "alt": "Queen Isabella Causeway"
+   },
+   "Gladys Porter Zoo": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/1/13/Entrance_of_the_Gladys_Porter_Zoo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "w": 960,
+    "h": 720,
+    "credit": "Jc161991",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Entrance_of_the_Gladys_Porter_Zoo.jpg",
+    "alt": "Gladys Porter Zoo"
+   }
+  }
+ },
+ "tyler": {
+  "city": {
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Tyler_May_2016_42_%28People%27s_Petroleum_Building_and_Plaza_Tower%29.jpg/960px-Tyler_May_2016_42_%28People%27s_Petroleum_Building_and_Plaza_Tower%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "w": 960,
+   "h": 640,
+   "credit": "Michael Barera",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Tyler_May_2016_42_(People%27s_Petroleum_Building_and_Plaza_Tower).jpg",
+   "alt": "tyler"
+  },
+  "places": {
+   "Tyler Rose Garden": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Tyler_Texas_Rose_Garden_Archway_2019.jpg/960px-Tyler_Texas_Rose_Garden_Archway_2019.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "w": 960,
+    "h": 540,
+    "credit": "Larry D. Moore",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Tyler_Texas_Rose_Garden_Archway_2019.jpg",
+    "alt": "Tyler Rose Garden"
+   },
+   "Caldwell Zoo": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Caldwell_Zoo%2C_Tyler%2C_TX_sign_IMG_0551.JPG/960px-Caldwell_Zoo%2C_Tyler%2C_TX_sign_IMG_0551.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "w": 960,
+    "h": 720,
+    "credit": "Billy Hathorn",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Caldwell_Zoo,_Tyler,_TX_sign_IMG_0551.JPG",
+    "alt": "Caldwell Zoo"
+   },
+   "Goodman-LeGrand House & Museum": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Goodman%E2%80%93LeGrand_House_March_2019_03.jpg/960px-Goodman%E2%80%93LeGrand_House_March_2019_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "w": 960,
+    "h": 640,
+    "credit": "Michael Barera",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Goodman%E2%80%93LeGrand_House_March_2019_03.jpg",
+    "alt": "Goodman-LeGrand House & Museum"
+   },
+   "Lake Tyler": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Lake_Tyler_East.jpg/960px-Lake_Tyler_East.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "w": 960,
+    "h": 539,
+    "credit": "David A. Harrison",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Lake_Tyler_East.jpg",
+    "alt": "Lake Tyler"
+   }
+  }
+ },
+ "nacogdoches": {
+  "city": null,
+  "places": {
+   "Angelina National Forest": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/FS-Angelina-002_%2817145828281%29.jpg/960px-FS-Angelina-002_%2817145828281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "w": 960,
+    "h": 638,
+    "credit": "US Forest Service - Southern Region",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "page": "https://commons.wikimedia.org/wiki/File:FS-Angelina-002_(17145828281).jpg",
+    "alt": "Angelina National Forest"
+   }
+  }
+ },
+ "abilene": {
+  "city": {
+   "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Abilene-skyline.jpg/960px-Abilene-skyline.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "w": 960,
+   "h": 350,
+   "credit": "Atownbman",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Abilene-skyline.jpg",
+   "alt": "abilene"
+  },
+  "places": {
+   "The Grace Museum": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/GraceAbilene1.jpg/960px-GraceAbilene1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "w": 960,
+    "h": 720,
+    "credit": "Keithimus (talk)",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:GraceAbilene1.jpg",
+    "alt": "The Grace Museum"
+   },
+   "Paramount Theatre": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Abilene_June_2019_10_%28Paramount_Theatre%29.jpg/960px-Abilene_June_2019_10_%28Paramount_Theatre%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "w": 960,
+    "h": 640,
+    "credit": "Michael Barera",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Abilene_June_2019_10_(Paramount_Theatre).jpg",
+    "alt": "Paramount Theatre"
+   },
+   "Abilene Zoo": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Abilene_Zoo%2C_Abilene%2C_Texas%2C_USA_-large_sign_-9June2011.jpg/960px-Abilene_Zoo%2C_Abilene%2C_Texas%2C_USA_-large_sign_-9June2011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "w": 960,
+    "h": 720,
+    "credit": "mr_t_77",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Abilene_Zoo,_Abilene,_Texas,_USA_-large_sign_-9June2011.jpg",
+    "alt": "Abilene Zoo"
+   },
+   "Buffalo Gap Historic Village": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Center_of_Town_Buffalo_Gap.jpg/960px-Center_of_Town_Buffalo_Gap.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "w": 960,
+    "h": 640,
+    "credit": "Teresa Fazio",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Center_of_Town_Buffalo_Gap.jpg",
+    "alt": "Buffalo Gap Historic Village"
+   },
+   "Abilene State Park": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Buffalo_Wallow_Abilene_State_Park_Texas_2023.jpg/960px-Buffalo_Wallow_Abilene_State_Park_Texas_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "w": 960,
+    "h": 540,
+    "credit": "Larry D. Moore",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Buffalo_Wallow_Abilene_State_Park_Texas_2023.jpg",
+    "alt": "Abilene State Park"
+   },
+   "Fort Phantom Hill": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Fort_Phantom_Hill_Entrance.jpg/960px-Fort_Phantom_Hill_Entrance.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "w": 960,
+    "h": 720,
+    "credit": "Pi3.124",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Fort_Phantom_Hill_Entrance.jpg",
+    "alt": "Fort Phantom Hill"
+   }
+  }
  }
 };

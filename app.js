@@ -34,6 +34,110 @@
     return `<span class="credit">Photo: ${esc(photo.credit)} · <a href="${esc(photo.page)}" target="_blank" rel="noopener">${esc(photo.license)}</a></span>`;
   }
 
+  /* ---------- Details, regions, place sheet ---------- */
+
+  const DETAILS = window.DETAILS || {};
+  const detail = (city, place) => {
+    const d = (DETAILS[city.slug] || {})[place.name] || [];
+    return { more: d[0] || "", time: d[1] || "" };
+  };
+  const GROUPS = ["Central Texas", "North Texas", "Gulf Coast", "East Texas", "West Texas", "Panhandle & Plains"];
+  const citiesIn = (g) => cities.filter((c) => c.group === g);
+  const allPlaces = cities.flatMap((c) => c.places.map((p, i) => ({ city: c, place: p, rank: i + 1 })));
+  const findPlace = (slug, rank) => {
+    const c = cities.find((x) => x.slug === slug);
+    return c ? { city: c, place: c.places[rank - 1], rank } : null;
+  };
+
+  // Place detail sheet (native <dialog>): opened from the map preview, search results and Explore.
+  const sheet = document.getElementById("sheet");
+  function openPlace(slug, rank) {
+    const hit = findPlace(slug, rank);
+    if (!hit || !hit.place) return;
+    const { city, place } = hit;
+    const ph = placePhoto(city, place);
+    const d = detail(city, place);
+    sheet.innerHTML = `
+      <div class="sheet-inner">
+        <button class="sheet-close" aria-label="Close">×</button>
+        <div class="sheet-media">${img(ph, place.name, 960, "sheet-img")}</div>
+        <div class="sheet-body">
+          <div class="kicker">${esc(place.category)} <span class="area">· ${esc(place.area)}</span></div>
+          <h2 class="sheet-title">${esc(place.name)}</h2>
+          <p class="sheet-city">No. ${rank} in <a href="#/city/${city.slug}">${esc(city.name)}</a></p>
+          <p class="body">${esc(place.blurb)}</p>
+          ${d.more ? `<p class="body more-text">${esc(d.more)}</p>` : ""}
+          ${d.time ? `<p class="allow"><strong>Allow</strong> ${esc(d.time)}</p>` : ""}
+          ${place.tip ? `<p class="tip"><strong>Good to know.</strong> ${esc(place.tip)}</p>` : ""}
+          <div class="links">
+            <a class="more" href="${appleMaps(place, city)}" target="_blank" rel="noopener">Directions</a>
+            <a class="more" href="#/city/${city.slug}">All 10 in ${esc(city.name)}</a>
+          </div>
+          ${credit(ph)}
+        </div>
+      </div>`;
+    sheet.querySelector(".sheet-close").addEventListener("click", () => sheet.close());
+    sheet.querySelectorAll('a[href^="#/"]').forEach((a) => a.addEventListener("click", () => sheet.close()));
+    if (!sheet.open) sheet.showModal();
+  }
+  // Close when clicking the backdrop.
+  sheet.addEventListener("click", (e) => {
+    if (e.target === sheet) sheet.close();
+  });
+  // Any element with data-open="slug:rank" opens that place.
+  document.addEventListener("click", (e) => {
+    const el = e.target.closest("[data-open]");
+    if (!el) return;
+    e.preventDefault();
+    const [slug, rank] = el.dataset.open.split(":");
+    openPlace(slug, Number(rank));
+  });
+
+  function placeCard({ city, place, rank }) {
+    return `
+      <a class="pcard" href="#/city/${city.slug}" data-open="${city.slug}:${rank}">
+        <div class="pcard-media">${img(placePhoto(city, place), "", 500, "pcard-img")}</div>
+        <div class="pcard-body">
+          <div class="kicker">${esc(place.category)} <span class="area">· ${esc(city.name)}</span></div>
+          <h3>${esc(place.name)}</h3>
+          <p>${esc(place.blurb)}</p>
+        </div>
+      </a>`;
+  }
+
+  // Cities menu in the global nav, grouped by region.
+  function buildCityMenu() {
+    const btn = document.getElementById("cities-btn");
+    const menu = document.getElementById("citymenu");
+    menu.innerHTML = `
+      <div class="citymenu-inner">
+        ${GROUPS.map(
+          (g) => `
+          <div class="citymenu-col">
+            <h3>${esc(g)}</h3>
+            ${citiesIn(g).map((c) => `<a href="#/city/${c.slug}">${esc(c.name)}</a>`).join("")}
+          </div>`
+        ).join("")}
+        <div class="citymenu-col citymenu-extra">
+          <h3>Browse</h3>
+          <a href="#/">Texas map</a>
+          <a href="#/explore">All ${allPlaces.length} places</a>
+        </div>
+      </div>`;
+    const setOpen = (open) => {
+      menu.classList.toggle("open", open);
+      btn.setAttribute("aria-expanded", String(open));
+      document.body.classList.toggle("menu-open", open);
+    };
+    btn.addEventListener("click", () => setOpen(!menu.classList.contains("open")));
+    menu.addEventListener("click", (e) => e.target.closest("a") && setOpen(false));
+    document.addEventListener("keydown", (e) => e.key === "Escape" && setOpen(false));
+    document.addEventListener("click", (e) => {
+      if (!menu.contains(e.target) && !btn.contains(e.target)) setOpen(false);
+    });
+    window.addEventListener("hashchange", () => setOpen(false));
+  }
+
   const searchIcon =
     '<svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M6.5 1a5.5 5.5 0 0 1 4.38 8.83l3.65 3.64a.75.75 0 1 1-1.06 1.06l-3.64-3.65A5.5 5.5 0 1 1 6.5 1Zm0 1.5a4 4 0 1 0 0 8 4 4 0 0 0 0-8Z"/></svg>';
 
@@ -94,7 +198,7 @@
             .slice(0, 5)
             .map(
               (p, i) => `
-            <li style="animation-delay:${120 + i * 55}ms">
+            <li style="animation-delay:${120 + i * 55}ms" data-open="${city.slug}:${i + 1}" tabindex="0" role="button">
               <span class="peek-n">${pad(i + 1)}</span>
               ${img(placePhoto(city, p), "", 330, "peek-img")}
               <span class="peek-text"><strong>${esc(p.name)}</strong><span>${esc(p.category)} · ${esc(p.area)}</span></span>
@@ -133,6 +237,10 @@
         <div class="stage-head">
           <span class="eyebrow">Texas Top 10</span>
           <h1 class="headline">Ten places.<br />Every city.</h1>
+          <div class="cta-row">
+            <a class="more" href="#cities">Browse all ${cities.length} cities</a>
+            <a class="more" href="#/explore">Explore all ${allPlaces.length} places</a>
+          </div>
         </div>
         <div class="stage-grid">
           <div class="map-wrap" id="map"></div>
@@ -152,6 +260,13 @@
               <input id="search" type="search" placeholder="Search cities and places" aria-label="Search cities and places" autocomplete="off" />
             </label>
           </div>
+          <div class="region-bar">
+            <div class="segmented" role="group" aria-label="Filter by region" id="region-seg">
+              <span class="seg-thumb" aria-hidden="true"></span>
+              ${["All regions", ...GROUPS].map((g, k) => `<button data-group="${esc(g)}" aria-pressed="${k === 0}">${esc(g)}</button>`).join("")}
+            </div>
+          </div>
+          <div id="place-hits"></div>
           <div class="tiles" id="tiles"></div>
         </div>
       </section>
@@ -211,22 +326,61 @@
     app.querySelector(".city-strip").addEventListener("pointerleave", leave);
     panel.innerHTML = panelIdle();
 
-    // Tiles + search
+    // Tiles: region filter + search (search also lists matching places)
     const grid = document.getElementById("tiles");
+    const hits = document.getElementById("place-hits");
     const search = document.getElementById("search");
-    const draw = (q) => {
+    let group = "All regions";
+    const draw = () => {
+      const q = search.value;
       const t = q.trim().toLowerCase();
-      const list = !t
-        ? cities
-        : cities.filter(
-            (c) => c.name.toLowerCase().includes(t) || c.places.some((p) => p.name.toLowerCase().includes(t))
-          );
+      const inGroup = (c) => group === "All regions" || c.group === group;
+      const list = cities.filter(
+        (c) => inGroup(c) && (!t || c.name.toLowerCase().includes(t) || c.places.some((p) => p.name.toLowerCase().includes(t)))
+      );
+      const places = t
+        ? allPlaces.filter(
+            ({ city, place }) =>
+              inGroup(city) && (place.name.toLowerCase().includes(t) || place.category.toLowerCase().includes(t))
+          )
+        : [];
+      hits.innerHTML = places.length
+        ? `<h3 class="hits-title">${places.length} place${places.length === 1 ? "" : "s"}</h3>
+           <div class="pgrid">${places.slice(0, 8).map(placeCard).join("")}</div>
+           ${places.length > 8 ? `<p class="hits-more"><a class="more" href="#/explore?q=${encodeURIComponent(q.trim())}">See all ${places.length}</a></p>` : ""}
+           <h3 class="hits-title">Cities</h3>`
+        : "";
       grid.innerHTML = list.length
         ? list.map(tile).join("")
+        : places.length
+        ? ""
         : `<p class="empty">No city or place matches “${esc(q)}.”</p>`;
     };
-    search.addEventListener("input", (e) => draw(e.target.value));
-    draw("");
+    search.addEventListener("input", draw);
+    segmented(document.getElementById("region-seg"), (btn) => {
+      group = btn.dataset.group;
+      draw();
+    });
+    draw();
+  }
+
+  // Wire up a segmented control with a sliding thumb. onPick(button) runs on each choice.
+  function segmented(seg, onPick) {
+    const thumb = seg.querySelector(".seg-thumb");
+    const moveThumb = (btn) => {
+      thumb.style.width = btn.offsetWidth + "px";
+      thumb.style.transform = `translateX(${btn.offsetLeft - 3}px)`;
+    };
+    seg.querySelectorAll("button").forEach((b) =>
+      b.addEventListener("click", () => {
+        seg.querySelectorAll("button").forEach((x) => x.setAttribute("aria-pressed", "false"));
+        b.setAttribute("aria-pressed", "true");
+        moveThumb(b);
+        b.scrollIntoView({ block: "nearest", inline: "nearest", behavior: "smooth" });
+        onPick(b);
+      })
+    );
+    requestAnimationFrame(() => moveThumb(seg.querySelector('button[aria-pressed="true"]')));
   }
 
   /* ---------- City ---------- */
@@ -265,6 +419,13 @@
           : ""
       }
 
+      <nav class="container-wide toc" aria-label="In this list">
+        <h2 class="toc-title">In this list</h2>
+        <ol class="toc-list">
+          ${city.places.map((p, k) => `<li><button data-jump="${k + 1}"><span>${pad(k + 1)}</span>${esc(p.name)}</button></li>`).join("")}
+        </ol>
+      </nav>
+
       <div class="toolbar">
         <div class="container">
           <div class="segmented" role="group" aria-label="Filter by category">
@@ -294,12 +455,14 @@
         .filter(({ p }) => cat === "All" || p.category === cat)
         .map(
           ({ p, rank }, k) => `
-          <li class="entry" style="animation-delay:${Math.min(k, 6) * 60}ms">
+          <li class="entry" id="place-${rank}" style="animation-delay:${Math.min(k, 6) * 60}ms">
             <div class="n" aria-hidden="true">${pad(rank)}</div>
             <div>
               <div class="kicker">${esc(p.category)}${p.area ? ` <span class="area">· ${esc(p.area)}</span>` : ""}</div>
               <h2><span class="sr">Number ${rank}: </span>${esc(p.name)}</h2>
               <p class="body">${esc(p.blurb)}</p>
+              ${detail(city, p).more ? `<p class="body more-text">${esc(detail(city, p).more)}</p>` : ""}
+              ${detail(city, p).time ? `<p class="allow"><strong>Allow</strong> ${esc(detail(city, p).time)}</p>` : ""}
               ${p.tip ? `<p class="tip"><strong>Good to know.</strong> ${esc(p.tip)}</p>` : ""}
               <div class="links">
                 <a class="more" href="${appleMaps(p, city)}" target="_blank" rel="noopener">Directions</a>
@@ -315,23 +478,97 @@
         .join("");
     };
 
-    // Segmented control with a sliding thumb.
-    const seg = app.querySelector(".segmented");
-    const thumb = seg.querySelector(".seg-thumb");
-    const moveThumb = (btn) => {
-      thumb.style.width = btn.offsetWidth + "px";
-      thumb.style.transform = `translateX(${btn.offsetLeft - 3}px)`;
-    };
-    seg.querySelectorAll("button").forEach((b) =>
+    const seg = app.querySelector(".toolbar .segmented");
+    segmented(seg, (b) => draw(b.dataset.cat));
+    draw("All");
+
+    // "In this list" jumps to an entry (resetting the filter so it's visible).
+    app.querySelectorAll("[data-jump]").forEach((b) =>
       b.addEventListener("click", () => {
-        seg.querySelectorAll("button").forEach((x) => x.setAttribute("aria-pressed", "false"));
-        b.setAttribute("aria-pressed", "true");
-        moveThumb(b);
-        draw(b.dataset.cat);
+        if (!document.getElementById("place-" + b.dataset.jump)) seg.querySelector("button").click();
+        const el = document.getElementById("place-" + b.dataset.jump);
+        const y = el.getBoundingClientRect().top + window.scrollY - 110;
+        window.scrollTo({ top: y, behavior: "smooth" });
       })
     );
-    requestAnimationFrame(() => moveThumb(seg.querySelector("button")));
-    draw("All");
+  }
+
+  /* ---------- Explore: every place, filterable ---------- */
+
+  function renderExplore(params) {
+    document.title = "Explore All Places — Texas Top 10";
+    setNav("explore");
+    const cats = ["All", ...new Set(allPlaces.map((x) => x.place.category))].sort((a, b) =>
+      a === "All" ? -1 : b === "All" ? 1 : a.localeCompare(b)
+    );
+    app.innerHTML = `
+      <header class="explore-head">
+        <div class="container-wide">
+          <span class="eyebrow">Explore</span>
+          <h1 class="headline-md">Every place, in one list.</h1>
+          <p class="subhead">All ${allPlaces.length} places across ${cities.length} Texas cities. Filter by region, city or kind of place, or search by name.</p>
+          <div class="filters">
+            <label class="searchfield">
+              ${searchIcon}
+              <input id="xsearch" type="search" placeholder="Search places" aria-label="Search places" autocomplete="off" />
+            </label>
+            <label class="select"><span class="sr">Region</span>
+              <select id="xregion"><option value="">All regions</option>${GROUPS.map((g) => `<option>${esc(g)}</option>`).join("")}</select>
+            </label>
+            <label class="select"><span class="sr">City</span>
+              <select id="xcity"><option value="">All cities</option>${cities
+                .slice()
+                .sort((a, b) => a.name.localeCompare(b.name))
+                .map((c) => `<option value="${c.slug}">${esc(c.name)}</option>`)
+                .join("")}</select>
+            </label>
+          </div>
+          <div class="chips" role="group" aria-label="Kind of place">
+            ${cats.map((c, k) => `<button class="chip-btn" data-cat="${esc(c)}" aria-pressed="${k === 0}">${esc(c)}</button>`).join("")}
+          </div>
+          <p class="result-count" id="xcount" aria-live="polite"></p>
+        </div>
+      </header>
+      <section class="container-wide explore-grid">
+        <div class="pgrid" id="xgrid"></div>
+      </section>`;
+
+    const q = document.getElementById("xsearch");
+    const region = document.getElementById("xregion");
+    const cityS = document.getElementById("xcity");
+    let cat = "All";
+    q.value = params.get("q") || "";
+    const draw = () => {
+      const t = q.value.trim().toLowerCase();
+      const list = allPlaces.filter(
+        ({ city, place }) =>
+          (!region.value || city.group === region.value) &&
+          (!cityS.value || city.slug === cityS.value) &&
+          (cat === "All" || place.category === cat) &&
+          (!t || place.name.toLowerCase().includes(t) || city.name.toLowerCase().includes(t) || place.blurb.toLowerCase().includes(t))
+      );
+      document.getElementById("xcount").textContent = `${list.length} place${list.length === 1 ? "" : "s"}`;
+      document.getElementById("xgrid").innerHTML = list.length
+        ? list.map(placeCard).join("")
+        : `<p class="empty">Nothing matches those filters.</p>`;
+    };
+    q.addEventListener("input", draw);
+    region.addEventListener("change", () => {
+      // Keep the city choice consistent with the region.
+      const c = cities.find((x) => x.slug === cityS.value);
+      if (c && region.value && c.group !== region.value) cityS.value = "";
+      draw();
+    });
+    cityS.addEventListener("change", draw);
+    app.querySelectorAll(".chip-btn").forEach((b) =>
+      b.addEventListener("click", () => {
+        app.querySelectorAll(".chip-btn").forEach((x) => x.setAttribute("aria-pressed", "false"));
+        b.setAttribute("aria-pressed", "true");
+        cat = b.dataset.cat;
+        draw();
+      })
+    );
+    draw();
   }
 
   /* ---------- Text pages ---------- */
@@ -418,8 +655,11 @@
       if (el) el.scrollIntoView();
       return;
     }
-    const [section, slug] = hash.replace(/^#\/?/, "").split("/");
+    if (sheet.open) sheet.close();
+    const [path, query] = hash.replace(/^#\/?/, "").split("?");
+    const [section, slug] = path.split("/");
     if (section === "city" && slug) renderCity(slug);
+    else if (section === "explore") renderExplore(new URLSearchParams(query || ""));
     else if (section === "method") renderMethod();
     else if (section === "about") renderAbout();
     else if (section === "credits") renderCredits();
@@ -435,6 +675,7 @@
     reveal();
   }
 
+  buildCityMenu();
   window.addEventListener("hashchange", route);
   route();
 })();
