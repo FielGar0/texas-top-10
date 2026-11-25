@@ -2,6 +2,8 @@
 
 A website showcasing the top 10 places in cities across Texas.
 
+Live demo: https://fielgar0.github.io/texas-top-10/
+
 Plain HTML, CSS and JavaScript with no build step, so it can be hosted on GitHub Pages as-is.
 
 ## Run locally
@@ -26,6 +28,10 @@ Then open http://127.0.0.1:5173
 - `TASKS.md`: what's done and what's next
 
 When you change CSS or JS, bump the `?v=` number on the links in `index.html` so browsers load the new files.
+
+## Publishing
+
+The demo is served by GitHub Pages from the `main` branch. Push to `main` and the site updates within a minute or two.
 
 ## Photos
 

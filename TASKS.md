@@ -13,8 +13,8 @@
 - [x] Phone layout and touch support
 - [x] Home page Map / List switch (remembers the choice)
 - [x] Navigation without the map: Cities menu by region, region filter, search that finds places, Explore page with filters, place detail popup, "In this list" jump links
+- [x] Demo live on GitHub Pages: https://fielgar0.github.io/texas-top-10/
 
 ## Next
 - [ ] Photos for the 121 places still without one (see `skip` entries in tools/photo_overrides.json)
 - [ ] Fact-check every entry against official sources
-- [ ] Halfway point: create GitHub repo and publish a demo URL with GitHub Pages
